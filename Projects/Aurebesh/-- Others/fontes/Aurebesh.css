@@ -1,0 +1,9 @@
+@font-face {
+        font-family: 'Aurebesh';
+        src: url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.eot');
+        src: url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.eot') format('embedded-opentype'),
+         url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.woff2') format('woff2'),
+         url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.woff') format('woff'),
+         url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.ttf') format('truetype'),
+         url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.svg#Aurebesh') format('svg');
+}
