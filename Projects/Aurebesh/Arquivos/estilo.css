@@ -87,10 +87,14 @@ padding: 13px;
     text-shadow: 2px 4px 6px #000;
 font-size: 30px;
 }
+footer{
+    background: #555;
+    color: #eee;    
+}
 footer span{
     font-family: Aurebesh, "Aurebesh Condensed";
     text-align: center;
-    margin-left: 45%; 
+    margin-left: 45%;
 }
 
 
@@ -359,9 +363,105 @@ footer span{
 }
 
 .hide{
-	display:none;
+    display:none;
 }
-footer{
-	background: #555;
-    color: #eee;
+
+
+@media screen and (max-width: 768px){
+#menu{
+    font-size: 1.5rem;
+}
+#menu img {
+    width: 20%;
+}
+            /* BOTÃO TRADUZIR */
+        .btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 5px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-3 {
+    background: #333;
+    color: #ccc;
+}
+
+.btn-3:hover {
+    background: #666;
+}
+
+.btn-3:active {
+    background: #000;
+    top: 2px;
+}
+
+.btn-3:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 40px;
+}
+.btn-3e {
+    padding:13px 60px 13px 13px;
+    overflow: hidden;
+}
+
+.btn-3e:before {
+    left: auto;
+    right: 10px;
+    z-index: 2;
+}
+
+.btn-3e:after {
+    width: 30%;
+    height: 200%;
+    background: rgba(255,255,255,0.1);
+    z-index: 1;
+    right: 0;
+    top: 0;
+    margin: -5px 0 0 -5px;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform-origin: 0 0;
+    -moz-transform: rotate(-20deg);
+    -ms-transform-origin: 0 0;
+    -ms-transform: rotate(-20deg);
+    transform-origin: 0 0;
+    transform: rotate(-20deg);
+}
+
+.btn-3e:hover:after {
+    width: 40%;
+}
+
+
+
+
+}
 }
