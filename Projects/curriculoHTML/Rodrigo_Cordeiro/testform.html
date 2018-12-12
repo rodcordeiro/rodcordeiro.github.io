@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEV</title>
+	<style type="text/css">
+body{
+	background-color: #ddd;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+
+}
+section{
+	background-color: #f4f4f4;
+	max-width: 920px;
+	margin: auto;
+	padding: 20px;
+}
+		
+form{
+	margin-left: 1em;
+	color: #333;
+}
+
+.input{
+	border-bottom: 3px solid #333;
+	padding: 5px;
+	min-width: 50%;
+	max-width: 60%;
+	margin-top: 10px;
+}
+
+input{
+	border:none;
+	background: transparent;
+	padding: 6px;
+	width: 100%;
+	font-size: 1em;
+}
+textarea{
+	min-width: 60%;
+	min-height: 50px;
+	height: 150px;
+	padding: 13px;
+	resize: none;
+	margin-top: 5px;
+	font-size: 1.3em;
+}
+.enviar{
+	border: 2px solid #333;
+	width: auto;
+	border-radius: 5px;
+	margin: 0 10%; 
+	padding: 13px;
+	font-size: 1em;
+	cursor: pointer;
+	background: #eee;
+	box-shadow: -1px -2px 1px #333 inset;
+}
+.enviar:hover{
+	background: #f4f4f4;
+	box-shadow: 4px 4px 10px #333;
+}
+
+</style>
+	
+</head>
+<body>
+<section>
+	<form>
+<div class="input">
+<input type="text" name="name" id="nome" required placeholder="Nome:"/>
+</div>
+<br>
+<div class="input">
+<input type="email" name="email" id="mail" placeholder="E-mail:" required/>
+</div>
+<br>
+<div class="input">
+<input type="tel" name="tel" id="tel" placeholder="Telefone: (xx)xxxx-xxxx" />
+</div>
+<br>
+<div>
+<textarea name="msg" id="msg" placeholder="Deixe aqui sua mensagem..."></textarea>
+</div>
+<br/>
+<input class="enviar" type="submit" name="sent" value="Enviar">
+</form>
+<a href='google.com'>google</a>
+</section>
+
+</body>
+</html>

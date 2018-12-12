@@ -1,0 +1,480 @@
+﻿@charset "ANSI";
+
+/* Aqui vão comentários e afins, links e coisas que voce pensou em usar e deixou anotado pra inserir depois saca? Ou até mesmo colinhas kkk
+
+
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans+Condensed:300|Rajdhani:700" rel="stylesheet">
+
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Kaushan Script', cursive;
+*/
+
+/* CORPO DO CURRÍCULO */
+
+body{
+	background-color: #ddd;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+}
+
+/* header */
+header{
+	clear: both;
+	padding-top: 60px;
+	font-family: 'Rajdhani', sans-serif;
+
+}
+
+header ul{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.3em;
+}
+header li{
+	list-style: none;
+	float: left;
+	text-align: center;
+	font-style: italic;
+	width: 18%;
+	padding: 1%;
+	font-size: 0.7em;
+	font-weight: bold;
+}
+
+header h1{
+	font-weight: bold;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+header h3{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-style: italic;
+	margin: 0;
+	font-size: 2em;
+	padding: 3px;
+	text-shadow: 3px 3px 13px #666;
+	font-weight: lighter;
+	color: #000;
+	
+
+}
+
+header img{
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	left:50;
+	box-shadow: 3px 5px 13px #000;
+}	
+
+
+article{
+	padding-top: 60px;
+	clear: both; 
+}
+
+section{
+	background-color: #f4f4f4;
+	max-width: 920px;
+	margin: auto;
+	padding: 20px;
+}
+
+
+#minhafoto{
+	float: left;
+	width: 240px;
+	height: 240px;
+	background-image: url("https://scontent.fcgh4-1.fna.fbcdn.net/v/t1.0-9/21369607_1199311573508196_5159172605417648343_n.jpg?_nc_cat=102&_nc_ht=scontent.fcgh4-1.fna&oh=b6140a67e19ac46adba9823e6a2a44ea&oe=5C7577D1");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 140px;
+	clear: left;
+	box-shadow: 6px 6px 13px #000;
+}
+/* MENU  */
+#big{
+	background: #666;
+	height: 15%;
+}
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 35px 20px;
+	outline: none;
+	color: #09f;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.15em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+.navbar {
+	display: none;
+    height: 60px;
+    width: 100%; 
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E2E2E2;
+    padding: 0 15px;
+    transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    -webkit-transition: padding 0.3s;
+    -o-transition: padding 0.3s;
+    
+    z-index: 1000;
+}
+.navbar .menu {
+    font-size: 0px;
+}
+.navbar .menu > li {
+    display: block;
+    text-align: center;
+    border-top: 1px solid #E2E2E2;
+}
+.navbar .menu > li > a,
+.navbar .logo {
+    color: black;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    padding: 0 15px;
+    transition: color 0.3s, background-color 0.3s, margin 0.3s;
+    -moz-transition: color 0.3s, background-color 0.3s, margin 0.3s;
+    -webkit-transition: color 0.3s, background-color 0.3s, margin 0.3s;
+    -o-transition: color 0.3s, background-color 0.3s, margin 0.3s;
+    cursor: pointer;
+}
+.navbar .menu > li > a:hover {
+    background-color: #3599F6;
+    color: white;
+}
+.navbar .logo {
+    font-size: 20px;
+    display: inline-block;
+}
+.navbar .collapse {
+    position: fixed;
+    background-color: #ccc;
+    width: 250px;
+    height: 100%;
+    top: 0px;
+    left: -250px;
+    border-right: 2px solid #262626;
+    transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    -webkit-transition: left 0.3s;
+}
+.navbar .collapse.open {
+    left: 0px;
+}
+.navbar .collapse > .logo {
+    display: block;
+    text-align: center;
+}
+.navbar .header .toggle {
+    float: right;
+    background-color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.navbar .header .toggle > .icon {
+    margin: 5px;
+    width: 27px;
+    height: 3px;
+    background-color: black;
+    transition: background-color 0.3s, margin 0.3s;
+    -moz-transition: background-color 0.3s, margin 0.3s;
+    -webkit-transition: background-color 0.3s, margin 0.3s;
+    -o-transition: background-color 0.3s, margin 0.3s;
+}
+.navbar .header .toggle:hover > .icon {
+    background-color: #3599F6;
+}
+
+ /* EFEITO DOS LINKS */
+ 
+.cl-effect-15 a {
+	color: rgba(0,0,0,0.2);
+	font-weight: 700;
+	text-shadow: none;
+}
+
+.cl-effect-15 a::before {
+	color: #ccc;
+	content: attr(data-hover);
+	position: absolute;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.cl-effect-15 a:hover::before,
+.cl-effect-15 a:focus::before {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0;
+}
+
+.cl-effect-21 a {
+	padding: 5px;
+	color: #262626;
+	font-weight: 700;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.cl-effect-21 a::before,
+.cl-effect-21 a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 a::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 a::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cl-effect-21 a:hover,
+.cl-effect-21 a:focus {
+	color: #fff;
+}
+
+.cl-effect-21 a:hover::before,
+.cl-effect-21 a:focus::before,
+.cl-effect-21 a:hover::after,
+.cl-effect-21 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+
+/* NOME e o CARGO */
+
+#nomecargo{
+	padding: 80px 0px 0px 20px;
+	float: left;
+}
+
+/* A PARTIR DE OBJETIVOS, É AFETADO DAQUI PRA BAIXO */
+
+h2 {
+	padding: 10px 4px;
+	font-family: 'Saira', sans-serif;
+	color: #333;
+	text-shadow: 3px 3px 6px #aaa;
+}
+
+.bot-left {
+  position: relative;
+}
+.bot-left:before, .bot-left:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+  
+}
+.bot-left:before {
+  top: -3px;
+  width: 3px;
+  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#333), to(transparent));
+  background-image: -webkit-linear-gradient(transparent, #333);
+  background-image: -moz-linear-gradient(transparent, #333);
+  background-image: -o-linear-gradient(transparent, #333);
+}
+.bot-left:after {
+  right: -3px;
+  height: 3px;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#333), to(transparent));
+  background-image: -webkit-linear-gradient(left, #333, transparent);
+  background-image: -moz-linear-gradient(left, #333, transparent);
+  background-image: -o-linear-gradient(left, #333, transparent);
+}
+
+dt{
+	float: left;
+	height: 50px;
+	width: 25%;
+	font-weight: bold;
+	text-align:right;
+}
+
+dd{
+	float: left;
+	height: 50px;
+	width: 79%;
+	margin:0;
+	padding-left: 2%;
+}
+
+/* O FORMULÁRIO */
+#contato{
+display: none;
+}
+
+form{
+	margin-left: 1em;
+	color: #333;
+}
+
+.input{
+	border-bottom: 3px solid #333;
+	padding: 5px;
+	min-width: 50%;
+	max-width: 60%;
+	margin-top: 10px;
+}
+
+input{
+	border:none;
+	background: transparent;
+	padding: 6px;
+	width: 100%;
+	font-size: 1em;
+}
+textarea{
+	min-width: 60%;
+	min-height: 50px;
+	height: 150px;
+	padding: 13px;
+	resize: none;
+	margin-top: 5px;
+	font-size: 1.3em;
+}
+.enviar{
+	border: 2px solid #333;
+	width: auto;
+	border-radius: 5px;
+	margin: 0 10%; 
+	padding: 13px;
+	font-size: 1em;
+	cursor: pointer;
+	background: #eee;
+	box-shadow: -1px -2px 1px #333 inset;
+}
+.enviar:hover{
+	background: #f4f4f4;
+	box-shadow: 4px 4px 10px #333;
+}
+
+
+
+footer{
+	width: 100%;
+	text-align: center;
+	font-size: .8em;
+	color: #666;
+}
+
+footer a{
+	color: #000;
+	font-weight: bold;
+	padding: 2px;
+}
+
+footer a:hover{
+	background: white;
+	color: #333;
+	text-decoration: none;
+}
+
+/* A PARTIR DAQUI, DEFINE A REAÇÃO DO SITE DE ACORDO COM O TAMANHO DA TELA. */
+
+@media (max-width: 960px) {
+	#big {
+		display: none;
+		background: transparent;
+	}
+	#compact, .navbar {
+		display: block;
+		
+	}
+	header {
+		padding-top: 40px;
+	}
+	
+	section { 
+		margin: 10px 10px 0px 10px;
+	}
+
+	header li{
+		width: 48%;
+	}
+
+	dt, dd{
+		width: 100%;
+		height: auto;
+		text-align: left;
+		padding: 0;
+	}
+
+	#nomecargo{
+		float: none;
+		text-align: center;
+		padding: 0;
+		margin: auto;
+	}
+	header img{
+		width: 200px;
+		height: 200px;
+		
+	}
+
+	#minhafoto{
+		float: none;
+		margin: auto;
+	    padding:0;
+	}
+
+}
+
+@media (max-width: 350px){
+	header li{
+		width: 100%;
+	}
+
+	#minhafoto{
+		margin-top: 120px;
+		width: 200px;
+		height: 200px;
+	}
+}
