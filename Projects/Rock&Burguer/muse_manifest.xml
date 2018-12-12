@@ -1,0 +1,167 @@
+<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.rockeburguer.com.br" resolutions="1x" timestamp="1511888958632">
+  <folder name="css">
+    <file name="site_global.css" crc="331949964"/>
+    <file name="master_principal.css" crc="136995904" ref="index:contato:cardápio:nossa-empresa:promoções"/>
+    <file name="nomq_preview_master_principal.css" crc="3824530138" ref="index:contato:cardápio:nossa-empresa:promoções"/>
+    <file name="index.css" crc="4118462704" ref="index"/>
+    <file name="nomq_index.css" crc="253771791" ref="index"/>
+    <file name="contato.css" crc="3934257767" ref="contato"/>
+    <file name="nomq_contato.css" crc="3796929375" ref="contato"/>
+    <file name="card_pio.css" crc="472072952" ref="cardápio"/>
+    <file name="nomq_card_pio.css" crc="519259928" ref="cardápio"/>
+    <file name="nossa-empresa.css" crc="3796922522" ref="nossa-empresa"/>
+    <file name="nomq_nossa-empresa.css" crc="4154416219" ref="nossa-empresa"/>
+    <file name="promo__es.css" crc="4054832936" ref="promoções"/>
+    <file name="nomq_promo__es.css" crc="236091055" ref="promoções"/>
+  </folder>
+  <folder name="fonts">
+    <file name="calibri-light.woff" crc="4146064982"/>
+    <file name="calibri-light.eot" crc="4250755694"/>
+    <file name="calibri-light.svg" crc="3854303360"/>
+  </folder>
+  <folder name="assets">
+    <file name="cartão-fidelidade-rock---burguer.pdf" crc="405834924" seo="true" mt="1509993227000"/>
+    <file name="promo-aqui-é-rock-n_-roll.pdf" crc="15410144" seo="true" mt="1511875058000"/>
+    <file name="cardápio.pdf" crc="4270576911" seo="true" mt="1511888406000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="cardápio:nossa-empresa:contato:promoções:index"/>
+    <file name="museutils.js" crc="3803043152" ref="cardápio:nossa-empresa:contato:promoções:index"/>
+    <file name="whatinput.js" crc="86476730" ref="cardápio:nossa-empresa:contato:promoções:index"/>
+    <file name="museconfig.js" crc="380897831" ref="cardápio:nossa-empresa:contato:promoções:index"/>
+    <file name="jquery.musemenu.js" crc="3784699396" ref="cardápio:nossa-empresa:contato:promoções:index"/>
+    <file name="jquery.watch.js" crc="99325471" ref="cardápio:nossa-empresa:contato:promoções:index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="cardápio:nossa-empresa:contato:promoções:index"/>
+    <file name="jquery.museresponsive.js" crc="3955820958" ref="cardápio:nossa-empresa:contato:promoções:index"/>
+    <file name="require.js" crc="4157109226" ref="cardápio:nossa-empresa:contato:promoções:index"/>
+    <file name="webpro.js" crc="242022427" ref="index"/>
+    <file name="musewpslideshow.js" crc="457073769" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="483674903" ref="index"/>
+    <file name="touchswipe.js" crc="4066113679" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="3857179760" ref="cardápio"/>
+    <file name="logo_oficial-u970.png" crc="4227468634" ref="cardápio:nossa-empresa:contato:promoções:index"/>
+    <file name="rb - cópia-crop-u2847.jpg" crc="4055084679" seo="true" ref="cardápio">
+      <caption webpage="cardápio" alt=""/>
+    </file>
+    <file name="brejas.jpg" crc="3871929491" seo="true" ref="cardápio">
+      <caption webpage="cardápio" alt=""/>
+      <caption webpage="cardápio" alt=""/>
+    </file>
+    <file name="insta.png" crc="400095032" seo="true" ref="cardápio:nossa-empresa:contato:promoções:index">
+      <caption webpage="contato" alt=""/>
+      <caption webpage="contato" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="promoções" alt=""/>
+      <caption webpage="promoções" alt=""/>
+      <caption webpage="nossa-empresa" alt=""/>
+      <caption webpage="nossa-empresa" alt=""/>
+      <caption webpage="cardápio" alt=""/>
+      <caption webpage="cardápio" alt=""/>
+    </file>
+    <file name="face.png" crc="226425348" seo="true" ref="cardápio:nossa-empresa:contato:promoções:index">
+      <caption webpage="contato" alt=""/>
+      <caption webpage="contato" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="promoções" alt=""/>
+      <caption webpage="promoções" alt=""/>
+      <caption webpage="nossa-empresa" alt=""/>
+      <caption webpage="nossa-empresa" alt=""/>
+      <caption webpage="cardápio" alt=""/>
+      <caption webpage="cardápio" alt=""/>
+    </file>
+    <file name="tel.png" crc="3993085603" seo="true" ref="cardápio:nossa-empresa:contato:promoções:index">
+      <caption webpage="contato" alt=""/>
+      <caption webpage="contato" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="promoções" alt=""/>
+      <caption webpage="promoções" alt=""/>
+      <caption webpage="nossa-empresa" alt=""/>
+      <caption webpage="nossa-empresa" alt=""/>
+      <caption webpage="cardápio" alt=""/>
+      <caption webpage="cardápio" alt=""/>
+    </file>
+    <file name="rb - cópia-crop-u28472.jpg" crc="4055084679" seo="true" ref="cardápio">
+      <caption webpage="cardápio" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="cardápio:nossa-empresa:contato:promoções:index"/>
+    <file name="rb 2-crop-u7241.jpg" crc="432426410" seo="true" ref="nossa-empresa">
+      <caption webpage="nossa-empresa" alt=""/>
+    </file>
+    <file name="rb 3.jpg" crc="3820638716" seo="true" ref="nossa-empresa:contato">
+      <caption webpage="contato" alt=""/>
+      <caption webpage="contato" alt=""/>
+      <caption webpage="nossa-empresa" alt=""/>
+      <caption webpage="nossa-empresa" alt=""/>
+    </file>
+    <file name="rb 2-crop-u72412.jpg" crc="432426410" seo="true" ref="nossa-empresa">
+      <caption webpage="nossa-empresa" alt=""/>
+    </file>
+    <file name="u7342-9.png" crc="133955308" ref="contato"/>
+    <file name="rb sl-crop-u7363.jpg" crc="3830974028" seo="true" ref="contato">
+      <caption webpage="contato" alt=""/>
+    </file>
+    <file name="u7370-9.png" crc="166721365" ref="contato"/>
+    <file name="u7342-92.png" crc="133955308" ref="contato"/>
+    <file name="rb sl-crop-u73632.jpg" crc="3830974028" seo="true" ref="contato">
+      <caption webpage="contato" alt=""/>
+    </file>
+    <file name="u7370-92.png" crc="166721365" ref="contato"/>
+    <file name="slide 1.jpg" crc="237072812" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide 2.jpg" crc="4262379851" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide 3.jpg" crc="110191201" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide 1-crop-u6851.jpg" crc="97525302" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide 2-crop-u6855.jpg" crc="4248466306" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide 3-crop-u6853.jpg" crc="4001825215" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="breja 1.jpg" crc="4182338967" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide 1-crop-u7148.jpg" crc="168834718" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rb 2-crop-u7143.jpg" crc="3833294310" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide 1-crop-u68512.jpg" crc="97525302" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide 2-crop-u68552.jpg" crc="4248466306" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide 3-crop-u68532.jpg" crc="4001825215" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide 1-crop-u71482.jpg" crc="168834718" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rb 2-crop-u71432.jpg" crc="3833294310" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="cardápio.html" crc="187113449" seo="true" mt="1511888682480" redirect="true"/>
+  <file name="nossa-empresa.html" crc="4103786211" seo="true" mt="1511878152023" redirect="true"/>
+  <file name="contato.html" crc="300643796" seo="true" mt="1511878152023" redirect="true"/>
+  <file name="promoções.html" crc="249743995" seo="true" mt="1511878152023" redirect="true"/>
+  <file name="index.html" crc="270919223" seo="true" mt="1511878152023" redirect="true"/>
+</manifest>
