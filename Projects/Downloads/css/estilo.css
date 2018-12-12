@@ -51,6 +51,7 @@ header{
 section{
     margin: 2%;
     padding: 5%;
+    width: 90%;
 }
 
 #welcome{
@@ -66,29 +67,20 @@ section{
 }
 
 
-#artigos ul{
-    list-style: none;
-    display: inline-flex;
-    max-width: 300px;
-    width: 100%;
-
+article{
+    width: 40%;
+    margin: 10% 3%;
+    display: inline-block;
+    height: 60px;
 }
-#artigos li{
-    margin: 10%;
-    padding: 5%;
-    width: 100%;
+#fix{display: block;}
+hr{display: none;}
+article>p{
+    margin-bottom: 50px;
 }
-
-#artigos li div {
-    height: 200px;
+article h2{
+    top:0;
 }
-
-footer span{
-    font-family: Aurebesh, "Aurebesh Condensed";
-    text-align: center;
-    margin-left: 45%; 
-}
-
 
 /* BOTÃO TRADUZIR */
 .btn {
@@ -179,27 +171,18 @@ footer span{
 footer{
 	background: #555;
     color: #eee;
+    font-family: 'Aurebesh';
+    text-align: center;
 }
+
+
+
 @media screen and (max-width: 768px){
    #content{
     width: auto;
     min-width: 300px;
 }
-#artigos ul{
-    margin-left: 0px;
-    list-style: none;
-    display: inline-block;
-    width: 100%;
 
-}
-#artigos li{
-    margin-left: -40px;
-    text-align: center;
-    float: left;
-}
-#artigos li div {
-    height: auto;
-}
 header{
     width: 95%;
 }
@@ -208,6 +191,14 @@ header{
 }
 #menu img {
     width: 20%;
+}
+
+article{
+    display: block;
+    height: auto;
+	width:100%;
+	text-align: center;
+ 
 }
 
 /* BOTÃO TRADUZIR */
@@ -297,6 +288,6 @@ header{
 }
 
 
-
+hr{display: block;}
 
 }
