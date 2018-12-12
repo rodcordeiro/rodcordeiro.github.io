@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+  <title>Form</title>
+  <meta name="theme-color" content="#000">
+  <meta name="viewport" content="width=divece-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="57x57" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="https://rodcordeiro.github.io/shares/my-favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://rodcordeiro.github.io/shares/my-favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://rodcordeiro.github.io/shares/my-favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://rodcordeiro.github.io/shares/my-favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://rodcordeiro.github.io/shares/my-favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#CCCCCC">
+	<meta name="msapplication-TileImage" content="https://rodcordeiro.github.io/shares/my-favicon/ms-icon-144x144.png">
+   
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
+
+<style>
+table,tr,th,td,section, div, form{
+border: 1px solid #000;
+}
+body{
+margin: 0;
+color: #fff;
+font-family: 'Ubuntu', sans-serif;
+}
+.corI{
+animation: cor 6s linear infinite;
+}
+@keyframes cor{
+0%{background: #333;}
+50%{background: #777;}
+100%{background: #333;}
+}
+
+section {
+margin: 3%;
+padding: 5%;
+}
+
+div{
+margin: 3%;
+padding: 5%;
+text-align: center;
+color: #f4f4f4;
+}
+
+input, select{
+border-radius: 5px;
+height:40px;
+width: 100%;
+text-align: center;
+color: #666;
+}
+
+label{
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+#Done{
+display: none;
+text-shadow: 3px 5px 10px #000;
+}
+
+form{
+	display: none;
+}
+form:target{
+	display: block;
+}
+table a{
+	color: #ccc;
+	text-decoration: none;
+}
+table a:hover{
+	color: #0fb;
+}
+table a:visited{
+	color: #fff;
+}
+
+th{
+	padding: 5%;
+
+}
+td{
+	padding: 5%;
+}
+</style>
+
+</head>
+<body id="body" class="corI">
+<section id="formulario">
+	<table>
+		<tr>
+			<th colspan="5">Selecione a entrada</th>
+		</tr>
+		<tr>
+			<td><a href="#1">ENT</a></td>
+			<td><a href="#2"> ALMS</a></td>
+			<td><a href="#3">ALMR</a></td>
+			<td><a href="#4">SAI</a></td>
+			<td><a href="#5">Selecionar entrada</a></td>
+		</tr>
+		<tr>
+			<td colspan="5">
+
+<div>
+<form id="1" action="http://rodconceptive.000webhostapp.com/Projects/Form/ent.php" method="post">
+<input id="envio" type="submit" value="Entrada" onClick="feito()"/>
+</form>
+<form id="2" action="http://rodconceptive.000webhostapp.com/Projects/Form/alms.php" method="post">
+<input id="envio" type="submit" value="Saída para almoço" onClick="feito()"/>
+</form>
+<form id="3" action="http://rodconceptive.000webhostapp.com/Projects/Form/almr.php" method="post">
+<input id="envio" type="submit" value="Retorno do almoço" onClick="feito()"/>
+</form>
+<form id="4" action="http://rodconceptive.000webhostapp.com/Projects/Form/sai.php" method="post">
+<input id="envio" type="submit" value="Saída" onClick="feito()"/>
+</form>
+<form id="5" action="http://rodconceptive.000webhostapp.com/Projects/Form/insertdata.php" method="post">
+<div>
+<select id="dado" name="entrada">
+<option selected>Selecione a entrada:</option>
+<option>ENT</option>
+<option>ALMS</option>
+<option>ALMR</option>
+<option>SAI</option>
+</select>
+</div>
+<div>
+<label for="data">Insira a data:</label><br/>
+<input id="data" type="date" name="dia"/>
+
+</div>
+<div>
+<label for="hora">Insira a hora:</label><br/>
+<input id="hora" type="time" name="horario"/>
+</div>
+<input id="envio" type="submit" value="Enviar" onClick="feito()"/>
+</form>
+</div>				
+			</td>
+		</tr>
+	</table>
+</section>
+<section id="Done" class="hide">
+<h1>DONE!!</h1>
+</section>
+<script>
+function feito() {
+document.getElementById("Done").style.display= "block";
+document.getElementById("formulario").style.display= "none";
+document.getElementById("body").style.animation= "corII 6s linear infinite";
+document.getElementById("body").classList.Add("corII");
+}
+</script>
+</body>
+</html>

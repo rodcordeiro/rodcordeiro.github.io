@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+ <head>
+
+	  <title>Form</title>
+
+	  <meta name="theme-color" content="#000">
+	 <meta name="viewport" content="width=divece-width, initial-scale=1">
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+
+
+	<!-- FAVICON --> 
+
+	<link rel="apple-touch-icon" sizes="57x57" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-57x57.png"> 
+	<link rel="apple-touch-icon" sizes="60x60" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-60x60.png"> 
+	<link rel="apple-touch-icon" sizes="72x72" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-72x72.png"> 
+	<link rel="apple-touch-icon" sizes="76x76" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-76x76.png"> 
+	<link rel="apple-touch-icon" sizes="114x114" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-114x114.png"> 
+	<link rel="apple-touch-icon" sizes="120x120" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-120x120.png"> 
+	<link rel="apple-touch-icon" sizes="144x144" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-144x144.png"> 
+	<link rel="apple-touch-icon" sizes="152x152" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-152x152.png"> 
+	<link rel="apple-touch-icon" sizes="180x180" href="https://rodcordeiro.github.io/shares/my-favicon/apple-icon-180x180.png"> 
+	<link rel="icon" type="image/png" sizes="192x192" href="https://rodcordeiro.github.io/shares/my-favicon/android-icon-192x192.png"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="https://rodcordeiro.github.io/shares/my-favicon/favicon-32x32.png"> 
+	<link rel="icon" type="image/png" sizes="96x96" href="https://rodcordeiro.github.io/shares/my-favicon/favicon-96x96.png"> 
+	<link rel="icon" type="image/png" sizes="16x16" href="https://rodcordeiro.github.io/shares/my-favicon/favicon-16x16.png"> 
+	<link rel="manifest" href="https://rodcordeiro.github.io/shares/my-favicon/manifest.json"> 
+	<meta name="msapplication-TileColor" content="#CCCCCC"> 
+	<meta name="msapplication-TileImage" content="https://rodcordeiro.github.io/shares/my-favicon/ms-icon-144x144.png"> 
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
+
+	<style>
+	h1{
+		font-family: 'Ubuntu';
+	}
+	body{
+		font-family: 'Open Sans Condensed';
+	}
+	#q1 {
+		display: none;
+	}
+	#q1:target{
+		display: block;
+	}
+	#q2 {
+		display: none;
+	}
+	#q2:target{
+		display: block;
+	}
+
+	#q3 {
+		display: none;
+	}
+	#q3:target{
+		display: block;
+	}
+	#q4{
+		display: none;
+	}
+	#q4:target{
+		display: block;
+	}
+</style>
+</head>
+
+<body id="body" class="corI">
+
+	<section>
+		<p>Preencha os dados para completar o curriculo.</p>
+		<a href="#q1">Começar</a>
+
+		<div id="formulario">
+			<form action="https://rodconceptive.000webhostapp.com/Projects/Curriculo/cv.php" method="post">
+				<div id="q1">
+					<h1>Objetvo:</h1>
+					<label for="obj">Qual seu objetivo:</label><br/>
+					<textarea type="text" name="obj" required></textarea><br>
+
+					<a href="#q2">Próxima</a>
+				</div>
+				<div id="q2">
+					<h1>Habilidades e competências</h1>
+					<label for="hc1">Habilidade ou Competência 1:</label><br/>
+					<input type="text" name="hc1" required><br>
+					<input type="text" name="hcd1" placeholder="Breve descrição ou comentário" required><br>
+					<hr>
+					<label for="hc2">Habilidade ou Competência 2:</label><br/>
+					<input type="text" name="hc2" required><br>
+					<input type="text" name="hcd2" placeholder="Breve descrição ou comentário" required><br>
+					<hr>
+					<label for="hc3">Habilidade ou Competência 3:</label><br/>
+					<input type="text" name="hc3" required><br>
+					<input type="text" name="hcd3" placeholder="Breve descrição ou comentário" required><br>
+					<hr>
+					<label for="hc4">Habilidade ou Competência 4:</label><br/>
+					<input type="text" name="hc4" required><br>
+					<input type="text" name="hcd4" placeholder="Breve descrição ou comentário" required><br>
+					<hr>
+					<label for="hc5">Habilidade ou Competência 5:</label><br/>
+					<input type="text" name="hc5" required><br>
+					<input type="text" name="hcd5" placeholder="Breve descrição ou comentário" required><br>
+					<hr>
+					<label for="hc6">Habilidade ou Competência 6:</label><br/>
+					<input type="text" name="hc6" required><br>
+					<input type="text" name="hcd6" placeholder="Breve descrição ou comentário" required><br>
+					<hr>
+					<label for="hc7">Habilidade ou Competência 7:</label><br/>
+					<input type="text" name="hc7" required><br>
+					<input type="text" name="hcd7" placeholder="Breve descrição ou comentário" required><br>
+					<hr>
+					<label for="hc8">Habilidade ou Competência 8:</label><br/>
+					<input type="text" name="hc8" required><br>
+					<input type="text" name="hcd8" placeholder="Breve descrição ou comentário" required><br>
+					<hr>
+					<label for="hc9">Habilidade ou Competência 9:</label><br/>
+					<input type="text" name="hc9" required><br>
+					<input type="text" name="hcd9" placeholder="Breve descrição ou comentário" required><br>
+					<hr>
+					<label for="hc10">Habilidade ou Competência 10:</label><br/>
+					<input type="text" name="hc10" required><br>
+					<input type="text" name="hcd10" placeholder="Breve descrição ou comentário" required><br>
+					<hr>
+					<a href="#q3">Próxima</a>
+				</div>
+				<div id="q3">
+					<h1>Experiência</h1>
+					<label for="atv1">Cargo:</label><br/>
+					<input type="text" name="atv1" placeholder="Funções:"/><br>
+					<label for="atv1e">Empresa:</label><br/>
+					<input type="text" name="atv1e" placeholder="Funções:"/><br>
+					<label for="atv1">Inicio:</label>
+					<input type="month" name="atv1i" placeholder="MM/AAAA"/> <label for="atv1">até:</label>
+					<input type="month" name="atv1f" placeholder="MM/AAAA"/><br/>
+					<hr>
+
+					<label for="atv2">Cargo:</label><br/>
+					<input type="text" name="atv2" placeholder="Funções:"/><br>
+					<label for="atv2e">Empresa:</label><br/>
+					<input type="text" name="atv2e" placeholder="Funções:"/><br>
+
+					<label for="atv2i">Inicio:</label>
+					<input type="month" name="atv2i" placeholder="Funções:"/> <label for="atv2f">até:</label>
+					<input type="month" name="atv2f" placeholder="Funções:"/><br/>
+					<hr>
+
+					<label for="atv3">Cargo:</label><br/>
+					<input type="text" name="atv3" placeholder="Funções:"/><br>
+					<label for="atv3e">Empresa:</label><br/>
+					<input type="text" name="atv3e" placeholder="Funções:"/><br>
+
+					<label for="atv3i">Inicio:</label>
+					<input type="month" name="atv3i" placeholder="Funções:"/> 
+					<label for="atv3f">até:</label>
+					<input type="month" name="atv3f" placeholder="Funções:"/><br/>
+					<hr>
+
+					<label for="atv4">Cargo:</label><br/>
+					<input type="text" name="atv4" placeholder="Funções:"/><br>
+					<label for="atv4e">Empresa:</label><br/>
+					<input type="text" name="atv4e" placeholder="Funções:"/><br>
+
+					<label for="atv4i">Inicio:</label>
+					<input type="month" name="atv4i" placeholder="Funções:"/> 
+					<label for="atv4f">até:</label>
+					<input type="month" name="atv4f" placeholder="Funções:"/><br/>
+					<hr>
+
+					<label for="atv5">Cargo:</label><br/>
+					<input type="text" name="atv5" placeholder="Funções:"/><br>
+					<label for="atv5e">Empresa:</label><br/>
+					<input type="text" name="atv5e" placeholder="Funções:"/><br>
+
+					<label for="atv5i">Inicio:</label>
+					<input type="month" name="atv3i" placeholder="Funções:"/> 
+					<label for="atv5f">até:</label>
+					<input type="month" name="atv5f" placeholder="Funções:"/><br/>
+					<hr>
+
+					<label for="atv6">Cargo:</label><br/>
+					<input type="text" name="atv6" placeholder="Funções:"/><br>
+					<label for="atv6e">Empresa:</label><br/>
+					<input type="text" name="atv6e" placeholder="Funções:"/><br>
+
+					<label for="atv6i">Inicio:</label>
+					<input type="month" name="atv6i" placeholder="Funções:"/> 
+					<label for="atv6f">até:</label>
+					<input type="month" name="atv6f" placeholder="Funções:"/><br/>
+					<hr>
+
+					<label for="atv7">Cargo:</label><br/>
+					<input type="text" name="atv7" placeholder="Funções:"/><br>
+					<label for="atv7e">Empresa:</label><br/>
+					<input type="text" name="atv7e" placeholder="Funções:"/><br>
+
+					<label for="atv7i">Inicio:</label>
+					<input type="month" name="atv7i" placeholder="Funções:"/> 
+					<label for="atv7f">até:</label>
+					<input type="month" name="atv7f" placeholder="Funções:"/><br/>
+					<hr>
+
+					<label for="atv8">Cargo:</label><br/>
+					<input type="text" name="atv8" placeholder="Funções:"/><br>
+					<label for="atv8e">Empresa:</label><br/>
+					<input type="text" name="atv8e" placeholder="Funções:"/><br>
+
+					<label for="atv8i">Inicio:</label>
+					<input type="month" name="atv8i" placeholder="Funções:"/> 
+					<label for="atv8f">até:</label>
+					<input type="month" name="atv8f" placeholder="Funções:"/><br/>
+					<hr>
+
+					<label for="atv9">Cargo:</label><br/>
+					<input type="text" name="atv9" placeholder="Funções:"/><br>
+					<label for="atv9e">Empresa:</label><br/>
+					<input type="text" name="atv9e" placeholder="Funções:"/><br>
+
+					<label for="atv9i">Inicio:</label>
+					<input type="month" name="atv9i" placeholder="Funções:"/> 
+					<label for="atv9f">até:</label>
+					<input type="month" name="atv9f" placeholder="Funções:"/><br/>
+					<hr>
+
+					<label for="atv10">Cargo:</label><br/>
+					<input type="text" name="atv10" placeholder="Funções:"/><br>
+					<label for="atv10e">Empresa:</label><br/>
+					<input type="text" name="atv10e" placeholder="Funções:"/><br>
+
+					<label for="atv10i">Inicio:</label>
+					<input type="month" name="atv10i" placeholder="Funções:"/> 
+					<label for="atv10f">até:</label>
+					<input type="month" name="atv10f" placeholder="Funções:"/><br/>
+					<hr>
+
+					<label for="atv11">Cargo:</label><br/>
+					<input type="text" name="atv11" placeholder="Funções:"/><br>
+					<label for="atv12e">Empresa:</label><br/>
+					<input type="text" name="atv11e" placeholder="Funções:"/><br>
+
+					<label for="atv11i">Inicio:</label>
+					<input type="month" name="atv11i" placeholder="Funções:"/> 
+					<label for="atv11f">até:</label>
+					<input type="month" name="atv11f" placeholder="Funções:"/><br/>
+					<hr>
+
+					<label for="atv12">Cargo:</label><br/>
+					<input type="text" name="atv12" placeholder="Funções:"/><br>
+					<label for="atv12e">Empresa:</label><br/>
+					<input type="text" name="atv12e" placeholder="Funções:"/><br>
+
+					<label for="atv12i">Inicio:</label>
+					<input type="month" name="atv12i" placeholder="Funções:"/> 
+					<label for="atv12f">até:</label>
+					<input type="month" name="atv12f" placeholder="Funções:"/><br/>
+					<hr>
+
+					<a href="#q4" onclick="chg1()">Próxima</a>
+				</div>
+				<div id="q4">
+					<h1>Formação</h1>
+					<label for="f1">Ensino:</label><br/>
+					<input type="text" name="f1" placeholder="'Ensino fundamental'"/><br>
+					<label for="f1i">Inicio:</label>
+					<input type="month" name="f1i" placeholder="MM/AAAA"/> <label for="f1f">até:</label>
+					<input type="month" name="f1f" placeholder="MM/AAAA"/><br/>
+					<hr>
+
+					<label for="f2">Ensino:</label><br/>
+					<input type="text" name="f2" placeholder="'Ensino fundamental'"/><br>
+					<label for="f2i">Inicio:</label>
+					<input type="month" name="f2i" placeholder="MM/AAAA"/> <label for="f2f">até:</label>
+					<input type="month" name="f2f" placeholder="MM/AAAA"/><br/>
+					<hr>
+
+					<label for="f3">Ensino:</label><br/>
+					<input type="text" name="f3" placeholder="'Ensino fundamental'"/><br>
+					<label for="f3i">Inicio:</label>
+					<input type="month" name="f3i" placeholder="MM/AAAA"/> <label for="f3f">até:</label>
+					<input type="month" name="f3f" placeholder="MM/AAAA"/><br/>
+					<hr>
+
+					<label for="f4">Ensino:</label><br/>
+					<input type="text" name="f4" placeholder="'Ensino fundamental'"/><br>
+					<label for="f4i">Inicio:</label>
+					<input type="month" name="f4i" placeholder="MM/AAAA"/> <label for="f4f">até:</label>
+					<input type="month" name="f4f" placeholder="MM/AAAA"/><br/>
+					<hr>
+
+					<label for="f5">Ensino:</label><br/>
+					<input type="text" name="f5" placeholder="'Ensino fundamental'"/><br>
+					<label for="f5i">Inicio:</label>
+					<input type="month" name="f5i" placeholder="MM/AAAA"/> <label for="f5f">até:</label>
+					<input type="month" name="f5f" placeholder="MM/AAAA"/><br/>
+					<hr>
+				</div>
+
+					<input type="submit" name="Enviar"/>
+
+				</form>
+			</div>
+
+			<div id="Done" class="hide">
+
+				<h1>DONE!!</h1>
+
+			</div>
+
+		</section>
+
+	</body>
+	</html>

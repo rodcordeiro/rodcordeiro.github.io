@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'Aurebesh';
+	src: url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.eot');
+	src: url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.eot') format('embedded-opentype'),
+	url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.woff2') format('woff2'),
+	url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.woff') format('woff'),
+	url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.ttf') format('truetype'),
+	url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.svg#Aurebesh') format('svg');
+}
+
+body{
+	background-color: #ddd;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 97.7%;
+	font-size: 2rem;
+	height: auto;
+	float: right;
+	text-align: right;
+	padding: 13px;
+	background: #555;
+	color: #eee;  
+	margin-bottom: 3%;  
+	font-family: 'Roboto Slab', serif;
+}
+
+#menu img {
+	width: 10%;
+	height: auto;
+	float: left;
+}
+
+#menu ul{
+	list-style: none;
+	width: 80%;
+	margin: 0 6%;
+}
+
+
+section{		
+	background-color: #f4f4f4;
+	margin: 0 10%;
+	width: 80%;
+	height: 100%;
+}
+
+form{
+	margin-left: 1em;
+	color: #333;
+}
+
+footer{
+	font-family: Aurebesh, "Aurebesh Condensed";
+	text-align: center;
+	background: #555;
+	color: #f4f4f4;
+	margin-bottom: 0;
+	width: 80%;
+	bottom: 0;
+}
+
+
+input{
+	border:none;
+	border-bottom: 2px solid #666;
+	background: transparent;
+	padding: 6px;
+	width: 80%;
+	font-size: 1em;
+	color: #666;
+}
+
+textarea{
+	min-width: 60%;
+	min-height: 50px;
+	height: 150px;
+	padding: 13px;
+	resize: none;
+	margin-top: 5px;
+	font-size: 1.3em;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+.enviar{
+	border: 2px solid #333;
+	width: auto;
+	border-radius: 5px;
+	margin: 3% 10%; 
+	padding: 13px;
+	font-size: 1em;
+	cursor: pointer;
+	background: #eee;
+	box-shadow: -1px -2px 1px #333 inset;
+}
+.enviar:hover{
+	background: #f4f4f4;
+	box-shadow: 4px 4px 10px #333;
+}
+#link2, #link3, #link4, #link5 {
+	display: none;
+}

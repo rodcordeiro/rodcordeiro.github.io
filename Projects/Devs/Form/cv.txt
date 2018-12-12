@@ -1,0 +1,28 @@
+<span class="input input--manami">
+<input class="input__field input__field--manami" type="text" name="name" id="nome" required/>
+<label class="input__label input__label--manami" for="name">
+<span class="input__label-content input__label-content--manami">Nome</span>
+</label>
+</span>
+<span class="input input--manami">
+<input class="input__field input__field--manami" type="email" name="email" id="mail" required/>
+<label class="input__label input__label--manami" for="email">
+<span class="input__label-content input__label-content--manami">Email</span>
+</label>
+</span>
+<span class="input input--manami">
+<input class="input__field input__field--manami" type="tel" name="tel" id="tel"/>
+<label class="input__label input__label--manami" for="tel">
+<span class="input__label-content input__label-content--manami">Telefone</span>
+</label>
+</span>
+<span class="input input--manami">
+<textarea class="input__field input__field--manami" name="msg" id="msg"></textarea>
+<label class="input__label input__label--manami" for="msg">
+<span class="input__label-content input__label-content--manami">Mensagem</span>
+</label>
+</span>
+
+		<label for="msg">Mensagem:</label><br/>
+		<textarea name="msg" rows="5" placeholder="Mensagem"></textarea><br/>
+		

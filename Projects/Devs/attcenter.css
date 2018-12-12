@@ -1,0 +1,178 @@
+@charset "UTF-8";
+	@font-face {
+		font-family: 'Aurebesh';
+		src: url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.eot');
+		src: url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.eot') format('embedded-opentype'),
+		url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.woff2') format('woff2'),
+		url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.woff') format('woff'),
+		url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.ttf') format('truetype'),
+		url('https://rodcordeiro.github.io/shares/Aurebesh/fonts/Aurebesh.svg#Aurebesh') format('svg');
+	}
+
+	body{
+		background-color: #ddd;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 1.2em;
+		margin: 0;
+		padding: 0;
+	}
+
+	header{
+		width: 97.7%;
+		font-size: 2rem;
+		height: auto;
+		float: right;
+		text-align: right;
+		padding: 13px;
+		background: #555;
+		color: #eee;  
+		margin-bottom: 5%;  
+		font-family: 'Roboto Slab', serif;
+	}
+
+	#menu img {
+		width: 10%;
+		height: auto;
+		float: left;
+	}
+
+	#menu ul{
+		list-style: none;
+	}
+
+	#timing{
+		font-size: 14pt;
+	}
+	#break{
+		display: none;
+	}
+
+
+	section{
+		background-color: #f4f4f4;
+		width: 80%;
+		height: auto;
+		margin: 0 10%;
+	}
+	footer{
+		font-family: Aurebesh, "Aurebesh Condensed";
+		text-align: center;
+		background: #333;
+		color: #f4f4f4;
+		width: 100%;
+		bottom: 0;
+	}
+
+	#anun{
+		width: 40%;
+		display: inline-block;
+		font-size: 14px;
+		text-align: top;
+	}
+
+
+	form{
+		margin: 1%;
+		color: #333;
+		width: 90%;
+	}
+
+
+input{
+	border:none;
+	border-bottom: 2px solid #666;
+	background: transparent;
+	padding: 6px;
+	width: 80%;
+	font-size: 1em;
+	color: #666;
+}
+
+select{
+border-radius: 5px;
+height:40px;
+width: 100%;
+text-align: center;
+color: #666;
+}
+
+label{
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+textarea{
+	min-width: 60%;
+	min-height: 50px;
+	height: 150px;
+	padding: 13px;
+	resize: none;
+	margin-top: 5px;
+	font-size: 1.3em;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+.enviar{
+	border: 2px solid #333;
+	width: auto;
+	border-radius: 5px;
+	margin: 3% 10%; 
+	padding: 13px;
+	font-size: 1em;
+	cursor: pointer;
+	background: #eee;
+	box-shadow: -1px -2px 1px #333 inset;
+}
+.enviar:hover{
+	background: #f4f4f4;
+	box-shadow: 4px 4px 10px #333;
+}
+
+
+#saving, #upload, #blog, #controle{
+	display: none;
+}
+
+
+/* SALVAR */
+#link2, #link3, #link4, #link5 {
+	display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+   #content{
+    width: auto;
+    min-width: 300px;
+}
+
+header{
+    width: 95%;
+}
+#menu{
+    font-size: 1.5rem;
+}
+#menu img {
+    width: 20%;
+}
+
+	#break{
+		display: block;
+	}
+
+
+	#barra{
+		display: none;
+	}
+
+		#anun{
+		width: 90%;
+		display: block;
+		font-size: 14px;
+		text-align: top;
+	}
+
+}
