@@ -1,0 +1,65 @@
+#e0fbfc
+#c2dfe3
+#9db4c0
+#5c6b73
+#253237
+
+blockquote{
+   color: #c2dfe3;
+   background: #253237;
+   border: none;
+   border-left: 4px solid #5c6b73;
+   width: 70%;
+   margin-left: 10%;
+   padding: 5px;
+   font-family:'Open Sans Condensed', sans-serif;
+}
+
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Ranga', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Roboto', sans-serif;
+
+Titulos{
+color: #253237;
+font-family: 'Roboto Slab', serif;
+}
+Subtitulos{
+color: #5c6b73;
+font-family: 'Ranga', cursive;
+}
+texto corrido{
+color: #000;
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+comentários{
+color: #253237;
+font-family: 'Shadows Into Light', cursive;
+}
+
+Body{
+background: #e0fbfc;
+margin: 0;
+}
+Sections{
+bakground #c2dfe3
+
+Menu{
+color: #c2dfe3;
+background: #253237;
+   
+
+PagePreloadingEffect >demo2
+OffCanvasMenuEffects >elastic / PerspectivePageViewNavigation>movedown
+animatedheader
+
+AnimatedTextFillsAll > demo5
+ArticleIntroEffects>demo7
+clickeffects >ivana
+NotificationStyles > other-boxspinner
+TooltipStylesInspiration> box
+TextInputEffects >Shoko

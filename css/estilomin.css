@@ -1,0 +1,492 @@
+
+    body{
+        margin: 0;
+    background: #595959;
+    }
+
+    #head{
+    background: #003b6f;
+    color: #fff;
+    padding: 5px;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 100%;
+    
+    }
+    
+    .head {
+     font-size: 2em;
+     width:auto;
+     display:inline-block;
+     text-align:left
+    }
+
+    /* Conteudo */
+    
+    section{
+     width: 80%;
+     margin: 2% 10%;
+     background: #D9D9D9;
+     padding: 13px;
+    }
+    
+@media  screen and (max-width: 768px) {
+        #navbar{
+            display: none;
+        }
+        #sidenav, #main, #navlittle{
+            display: block;
+        }
+
+        #projeto>table th{
+            font-size: 20px;
+        }
+        #projeto>table th>span{
+            font-size: 7px;
+        }
+        #projeto>table td>p{
+            font-size: 11px;
+        }
+        #projeto>table td>img{
+            min-height:10px;
+            max-height: 150px;
+        }
+           
+    #head{
+    background: #003b6f;
+    color: #fff;
+    padding: 5px;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 100%;
+    
+    }
+    
+    .head {
+     font-size: 2em;
+     width:auto;
+     display:inline-block;
+     text-align:left
+    }
+
+    /* Conteudo */
+    
+    section{
+     width: 80%;
+     margin: 2% 10%;
+     background: #D9D9D9;
+     padding: 13px;
+    }
+    
+    /* MENU */
+    #navbar{
+        text-align: center;
+    }
+    #navbar a {
+    position: relative;
+    display: inline-block;
+    margin: 35px 25px;
+    outline: none;
+    color: #aaa;
+font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1.35em;
+    }
+
+    #xXx>i{
+        font-size: 2em;
+    }
+
+    @keyframes brisa{
+        0%{transform: rotate(10deg)}
+        10%{transform: rotate(110deg)}
+        20%{transform: rotate(0deg)}
+        30%{transform: rotate(10deg)}
+        40%{transform: rotate(0deg)}
+        50%{transform: rotate(0deg)}
+        60%{transform: rotate(0deg)}
+        70%{transform: rotate(0deg)}
+        80%{transform: rotate(0deg)}
+        90%{transform: rotate(360deg)}
+        100%{transform: rotate(-360deg)}
+    }
+    
+    #navbar a.head{
+     margin
+    }
+
+    #navbar a:hover,
+    #navbar a:focus {
+    outline: none;
+    }
+    
+    #navbar a:active {
+     color: #ccc;
+    }
+    
+    /* MENUZIN */
+    
+    #sidenav, #main, #navlittle{
+            display: none;
+        }
+    
+    #main{
+        height: 13%;
+        transition: 0.6s;
+        padding: 16px;   
+        align: center;
+       }
+       
+       #menu-icon{
+           font-size: 50px;
+           cursor: pointer;
+       }
+       
+       #sidenav{
+           height: 100%;
+           width: 0;
+           position: fixed;
+           overflow-x: hidden;
+           background-color: #404040;
+           top: 0;
+           left: 0;
+           z-index: 1;
+           padding-top: 60px;
+           transition: 0.6s;
+           box-shadow: inset 0px 0px 15px #000000;
+       }
+       #sidenav a{
+           text-decoration: none;
+           padding: 8px 8px 8px 32px;
+           display: block;
+           font-family: 'Roboto Slab', serif;
+		text-decoration: none;
+           text-transform: uppercase;
+           font-size: 25px;
+           color: #fff;
+           transition: 0.8s;
+       }
+    
+       #sidenav a:hover{
+         color: #e1e1e1;
+       }
+       
+       #sidenav .closebtn{
+           position: absolute;
+           top: 30px;
+           right: 25px;
+           font-size: 36px;
+           margin-left: 50px;
+       }
+       
+       #navlittle, .contents{
+          position: absolute; 
+          top: 100px;
+       }
+    
+    
+
+
+    /* Efeito dos links */
+    .cl-effect-12 a::before,
+    .cl-effect-12 a::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        border: 2px solid rgba(0,0,0,0.1);
+        border-radius: 50%;
+        content: '';
+        opacity: 0;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+        -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+        transition: transform 0.3s, opacity 0.3s;
+        -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+        -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
+        transform: translateX(-50%) translateY(-50%) scale(0.2);
+    }
+
+    .cl-effect-12 a::after {
+        width: 90px;
+        height: 90px;
+        border-width: 6px;
+        -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+        -moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
+        transform: translateX(-50%) translateY(-50%) scale(0.8);
+    }
+
+    .cl-effect-12 a:hover::before,
+    .cl-effect-12 a:hover::after,
+    .cl-effect-12 a:focus::before,
+    .cl-effect-12 a:focus::after {
+        opacity: 1;
+        -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+        -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+        transform: translateX(-50%) translateY(-50%) scale(1);
+    }
+    
+    #men{
+        width: 80px;
+        height: 50px;
+        text-align: center;
+    }
+    .hide{
+        filter: opacity(0%);
+        transition: 0.2s;
+    }
+
+
+    /* HOME */
+    
+    
+    #home p{
+     text-align: center;
+     font-family: 'Open Sans Condensed', sans-serif;
+     font-size: 1.3em;
+     width: 75%;
+     margin: 0% 12%;
+    }
+    
+    #home h1{
+     text-align: center;
+     font-size: 4em;
+     font-family: 'Roboto Slab', serif;
+    }
+    #home p>i{
+        animation: corzinea 4s linear infinite;
+    }
+    @keyframes corzinea{
+        0%{color:#fff}
+        25%{color:#0099ff}
+        50%{color:#9882d9}
+        75%{color:#e40000}
+        90%{color:#930000}
+        100%{color:#fff}
+    }
+
+    #projeto>h1{
+     text-align: center;
+     font-family: 'Roboto Slab', serif;
+	 font-size: 3em;
+     text-shadow: 3px 4px 8px #888;
+    }
+    
+    #projeto>p{
+     text-align: center;
+     font-family: 'Open Sans Condensed', sans-serif;
+     font-size: 1.5em;
+     width: 75%;
+     margin: 0% 12%;
+    }
+    
+    #projeto hr{
+     box-shadow: 2px 3px 6px #aaa;
+    }
+    
+
+
+#projeto>table{
+    max-height: 400px;
+    width: 100%;
+}
+#projeto>table th{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2em;
+}
+#projeto>table th>span{
+    float: left;
+    text-align: left;
+    font-family: 'Shadows into Light', cursive;
+    color: #930000;
+    font-size: 12px;
+}
+
+#projeto>table td{
+    width: 50%;
+    max-height: 400px;
+}
+#projeto>table td>p{
+    text-align: justify;
+    width: 75%;
+    font-size: 10;
+    margin: 0% 12%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 23px;
+}
+#projeto>table td>p a{
+    text-decoration: none;
+    color: #595959;
+    font-weight: 400;
+}
+#projeto>table td>img{
+    width: 80%;
+    max-width: 300px;
+    height:80%;
+    max-height: 300px;
+    border-radius: 100%;
+    box-shadow: 4px 6px 13px #000;
+    margin: 2% 20%;
+}
+
+    
+    /* BLOG */
+     
+    #blog h1{
+     text-align: center;
+     font-family: 'Roboto Slab', serif;
+	font-size: 4em;
+     text-shadow: 3px 4px 8px #888;
+    }
+    
+#blog hr{
+             box-shadow: 2px 3px 6px #aaa;
+            }
+             
+            #blog h1{
+             text-align: center;
+             font-family: 'Roboto Slab', serif;
+			 font-size: 4em;
+             text-shadow: 3px 4px 8px #888;
+            }
+            
+            
+            
+            
+
+.label {
+    display: inline;
+    font-size: 12pt;
+    font-family: arial;
+    font-weight: bold;
+}
+.desc {
+    width: 100%;
+    overflow: hidden;
+    color: #404040;
+    font-size: 11pt;
+}
+.cred {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0;
+    padding: 3px;
+    border-radius: 1px;
+    color: #404040;
+}
+.card {
+    width: calc(100% - 10px);
+    padding: 5px;
+    background: #f2f2f2;
+    color: #404040;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    box-shadow: 3px 4px 23px #000;
+    text-align: left;
+    
+}
+.card:before {
+    background: #f2f2f2;
+    width: 12pt;
+    height: 12pt;
+    display: inline-block;
+    content: ' ';
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    left: -10pt;
+    top: 50%;
+    margin: 0;
+    padding: 0;
+}
+.card blockquote{
+     background: #ccc;
+     color: #333;
+     text-align: left;
+     margin-left:5%;
+     border-left: 2px solid #416275;
+     padding: 1px 5px;
+     font-family: 'Dosis', sans-serif;
+    -webkit-user-select: text;
+    -moz-user-select:  tex;
+    -ms-user-select:  text;
+    user-select:  text;
+    }
+    .copia{color:red; font-family: 'Dosis', sans-serif;}
+    .cortar{color:red; font-family: 'Gugi', cursive;}
+    .cola{color:red; font-family: 'Shadows into Light', cursive;}
+
+.data{
+    color: #404040;
+     font-family: 'Dosis', sans-serif;
+     background: #ddd;
+     padding: 1px 5px;
+     border-bottom:1px solid #416275;
+     margin-bottom: 8px;
+    }
+    
+.titulo{
+    color: #404040;
+     font-family: 'Roboto Slab', serif;
+	 font-size: 1.5rem;
+     background: #D9D9D9;
+     border-bottom:1px solid #416275;
+     width: 50%;
+     margin-bottom: 16px;
+    }
+    
+img{
+    max-width: 512px;
+    text-align: center;
+    margin-left: 20%;
+}
+
+/* YO */
+    #yo{
+        -webkit-user-select:none; /* Safari 3.1+ */
+        -moz-user-select: none;/* Firefox 2+ */
+        -ms-user-select: none;/* IE 10+ */
+        user-select: none; /* Standard syntax */
+    }
+    #yo h1{
+     text-align: center;
+     font-family: 'Roboto Slab', serif;
+	font-size: 4em;
+     text-shadow: 3px 4px 8px #888;
+    }
+    
+    #yo table{
+        width: 80%;
+        margin: 2% 10%;
+    }
+    #yo table td{
+        width: 50%;
+        max-height: 400px;
+        margin: 0% 5%;
+    }
+    #yo table td img{
+        width: 80%;
+        height: auto;
+        border-radius: 100%;
+    }
+
+    #yo>table td>p{
+        font-size: 1.5em;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    #contato{}
+

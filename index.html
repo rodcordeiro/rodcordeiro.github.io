@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Blog do cordeiro</title>
+
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#CCCCCC">
+  <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+  
+  <link rel="stylesheet" type="text/css" href="css\estilo.css">
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <meta name="theme-color" content="#CCCCCC">
+  <meta name="viewport" content="width=divece-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/favicon/ms-icon-310x310.png">
+  <meta property="og:site_name" content="Blog do cordeiro">
+
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans+Condensed:300|Rajdhani|Ranga|Roboto|Roboto+Slab|Shadows+Into+Light" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+<audio autoplay>
+  <source src="https://rodconceptive.000webhostapp.com/Poesia_Ac%C3%BAstica.mp3" type="audio/mpeg">
+  <source src="https://rodconceptive.000webhostapp.com/Poesia_Ac%C3%BAstica.ogg" type="audio/ogg">
+</audio>
+
+  <div id="head">
+   <!-- The sliding navigation menu bar -->  
+   <div id="sidenav"> 
+
+    <!-- The cross button -->
+    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- The menu contents -->   
+    <nav id="navlittle" class="contents">
+     <a href="#home" onclick="closeNav(), home()">Home</a>
+     <a href="#projeto" onclick="closeNav(), projetos()">Projetos</a>
+     <a onclick="closeNav(), blog()" href="#blog">Blog</a>
+     <a onclick="closeNav(), yo()" href="#yo">Sobre mim</a>
+     <a href="Projects\Downloads\index.html">Central de arquivos</a>
+   </nav> 
+
+ </div>
+
+ <!-- The hamburger button -->
+ <div id="main">
+  <span id="menu-icon" onclick="OpenNav()">
+    <div id="men">
+      <i id="a" class="material-icons hide">more_vert</i>
+      <i id="b" class="material-icons">menu</i>
+    </div>
+  </span>
+
+</div>
+
+
+<nav id="navbar" class="cl-effect-12" onclick="efeito()">
+  <a id="1" href="#home" onclick="home()">Home</a>|
+  <a id="2" href="#projeto" onclick="projetos()">Projetos</a>|
+  <a href="Projects\Downloads\index.html"> <div id="xXx"><i class="fa fa-ge"></i></div> </a>|
+  <a id="3" href="#blog" onclick="blog()">Blog</a>|
+  <a id="4" href="#yo" onclick="yo()">Sobre mim</a>
+</nav>
+</div>
+<div id="conteudo">
+
+ <section id="home">
+
+   <h1>Bem vindo <script>document.write( uname )</script>!!</H1>
+     <p> Ent&#227o... isso &#233 um blog/di&#225rio sobre meus projetos, c&#243digos, coisas novas que aprendi. Sobre mim. Pelo menos &#233 essa a ideia ent&#227o, vamos l&#225! </p>
+     <p>
+
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+      <g>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M50.101,4.854c24.907,0.054,45.259,19.967,45.237,45.26
+        c-0.021,25.293-20.24,45.244-45.262,45.226C24.718,95.321,4.876,74.92,4.864,50.113C4.851,25.125,25.005,4.899,50.101,4.854z
+        M84.869,78.188c13.412-16.02,14.754-43.703-5.024-61.463C60.842-0.338,31.203,1.909,15.023,22.362
+        C-1.461,43.2,3.572,73.721,26.351,87.98c21.323,13.349,46.313,5.736,58.166-9.422c-1.956-2.012-3.914-4.026-5.894-6.063
+        c-0.105,0.121-0.183,0.205-0.254,0.293c-2.076,2.59-4.459,4.857-7.16,6.787c-5.223,3.73-11.037,5.928-17.411,6.597
+        c-4.107,0.432-8.185,0.166-12.203-0.834c-8.67-2.156-15.615-6.88-20.921-14.049c-0.178-0.239-0.159-0.381,0.032-0.594
+        c0.5-0.557,1.007-1.112,1.448-1.714c0.709-0.97,1.21-2.049,1.526-3.205c-0.305-0.161-0.565-0.298-0.826-0.435
+        c0.016,0.042,0.033,0.085,0.049,0.127c-0.233,0.102-0.464,0.271-0.701,0.278c-0.154,0.005-0.454-0.238-0.445-0.352
+        c0.022-0.297,0.179-0.583,0.282-0.873c0.052,0.012,0.104,0.024,0.157,0.037c-0.385-0.798-0.457-1.604-0.058-2.408
+        c0.394-0.794,1.07-1.236,1.937-1.435c-0.454-3.064-1.864-5.539-4.197-7.48c-1.622-1.35-3.505-2.161-5.583-2.516
+        c-0.28-0.048-0.451-0.117-0.45-0.458c0.013-2.927,0.313-5.818,1.017-8.663c1.462-5.916,4.169-11.184,8.267-15.707
+        c1.125-1.243,2.358-2.389,3.566-3.603c-0.539-1.669-0.335-2.659,0.858-3.466c1.096-0.741,2.446-0.527,3.401,0.481
+        c2.688-1.627,5.518-2.94,8.525-3.875c4.698-1.461,9.5-1.873,14.375-1.395c3.703,0.363,7.289,1.271,10.675,2.823
+        c1.842,0.844,3.592,1.889,5.371,2.864c0.142,0.078,0.189,0.325,0.28,0.494c-0.182,0.005-0.378,0.057-0.542,0.006
+        c-0.333-0.103-0.638-0.295-0.972-0.391c-3.229-0.923-6.164-0.385-8.729,1.835c-3.891,3.365-4.069,9.498-0.395,13.095
+        c3.442,3.371,8.829,3.478,12.402,0.247c2.609-2.359,3.583-6.182,2.437-9.509c-0.419-1.217-1.075-2.282-1.923-3.244
+        c-0.103-0.117-0.088-0.337-0.127-0.509c0.176,0.042,0.395,0.032,0.522,0.135c1.99,1.606,3.796,3.4,5.409,5.386
+        c2.989,3.679,5.135,7.808,6.542,12.325c1.079,3.462,1.532,7.018,1.549,10.637c0.002,0.321-0.108,0.438-0.413,0.488
+        c-0.492,0.081-0.985,0.177-1.462,0.318c-3.405,1.014-5.864,3.154-7.366,6.355c-1.405,2.997-1.49,6.074-0.317,9.172
+        c0.586,1.547,1.478,2.907,2.647,4.076c0.248,0.248,0.302,0.438,0.041,0.708c-0.203,0.21-0.358,0.467-0.551,0.725
+        C80.922,74.122,82.883,76.141,84.869,78.188z M14.349,50.182c0.25,0.058,0.41,0.1,0.572,0.132c1.777,0.356,3.396,1.082,4.839,2.166
+        c2.621,1.968,4.222,4.574,4.763,7.815c0.048,0.289,0.139,0.462,0.48,0.513c0.3,0.045,0.608,0.188,0.864,0.36
+        c0.931,0.628,1.324,1.729,1.039,2.805c-0.271,1.023-1.159,1.753-2.287,1.84c-0.313,0.024-0.434,0.14-0.546,0.436
+        c-0.269,0.714-0.542,1.441-0.936,2.089c-0.576,0.947-1.258,1.829-1.924,2.78c3.137,4.353,7.135,7.836,11.911,10.421
+        c4.779,2.588,9.898,3.974,15.438,4.271c-0.137-0.076-0.163-0.099-0.192-0.105c-4.173-0.985-6.766-3.545-7.641-7.76
+        c-0.715-3.445,1.019-7.489,3.96-9.421c1.871-1.229,3.901-1.828,6.149-1.655c0.162,0.013,0.418-0.104,0.494-0.237
+        c0.677-1.188,2.027-1.712,3.246-1.226c1.256,0.502,1.896,1.817,1.497,3.151c-0.079,0.265-0.013,0.385,0.17,0.543
+        c1.719,1.495,2.793,3.361,3.226,5.603c0.686,3.543-0.996,7.499-4.02,9.486c-1.14,0.749-2.363,1.277-3.691,1.576
+        c5.648-0.265,10.956-1.751,15.879-4.53c4.131-2.333,7.681-5.357,10.601-9.134C62.316,55.707,46.435,39.357,30.559,23.015
+        c-1.251,0.751-1.924,0.708-3.546-0.233C18.809,30.051,14.542,39.137,14.349,50.182z M74.375,23.916
+        c2.909,6.064-0.638,12.195-5.958,13.636c-5.271,1.427-10.523-1.714-11.767-6.923c-0.784-3.288,0.008-6.248,2.31-8.747
+        c2.306-2.503,5.225-3.302,8.643-2.882c-11.15-6.465-25.779-6.063-36.366,0.807c0.442,0.982,0.345,1.926-0.325,2.81
+        c15.885,16.36,31.75,32.7,47.644,49.068c0.183-0.24,0.331-0.436,0.483-0.635c-3.267-3.652-4.466-7.813-2.928-12.505
+        c1.531-4.674,4.907-7.38,9.735-8.389C85.672,39.781,81.863,31.041,74.375,23.916z M51.098,67.449
+        c-4.335-0.604-8.645,2.385-9.721,6.688c-1.098,4.39,1.322,8.994,5.492,10.593c4.375,1.677,9.468-0.308,11.474-4.808
+        c1.726-3.87,0.292-8.456-2.667-10.542c-0.817,0.889-1.807,1.251-2.959,0.782C51.539,69.682,50.998,68.751,51.098,67.449z
+        M51.846,66.859c1.247,0.515,2.479,1.022,3.711,1.53c0.353-0.879-0.079-1.992-1.005-2.44
+        C53.516,65.448,52.401,65.842,51.846,66.859z M24.484,65.277c1.058,0.062,1.983-0.846,1.993-1.985
+        c0.008-1.052-0.834-1.991-1.705-1.959C24.676,62.642,24.581,63.945,24.484,65.277z M30.419,19.592
+        c-0.886-0.796-1.912-0.867-2.735-0.21c-0.825,0.658-1.027,1.682-0.506,2.578C28.248,21.178,29.317,20.396,30.419,19.592z
+        M30.726,20.022c-1.101,0.802-2.166,1.577-3.25,2.367c0.918,0.766,1.896,0.81,2.716,0.184
+        C30.964,21.983,31.191,21.035,30.726,20.022z M24.245,61.27c-1.195,0.223-1.859,1.016-1.854,2.023
+        c0.004,0.922,0.631,1.735,1.57,1.901C24.054,63.904,24.147,62.627,24.245,61.27z M51.66,67.502c-0.15,1.036,0.339,1.85,1.287,2.208
+        c0.838,0.317,1.822,0.018,2.293-0.718C54.177,68.211,52.988,67.74,51.66,67.502z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M65.929,30.934c-1.424,0.041-2.583-1.063-2.624-2.499
+        c-0.039-1.392,1.1-2.582,2.517-2.629c1.385-0.047,2.586,1.112,2.615,2.522C68.466,29.766,67.382,30.893,65.929,30.934z
+        M65.874,30.412c1.176,0.001,2.043-0.869,2.038-2.047c-0.004-1.108-0.924-2.035-2.022-2.039c-1.114-0.003-2.082,0.969-2.063,2.071
+        C63.847,29.512,64.76,30.411,65.874,30.412z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M59.077,29.602c-0.012,0.354-0.189,0.562-0.548,0.569
+        c-0.381,0.008-0.583-0.194-0.577-0.58c0.006-0.366,0.206-0.543,0.563-0.541C58.876,29.053,59.06,29.246,59.077,29.602z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.276,54.214c-0.02,0.369-0.187,0.576-0.554,0.581
+        c-0.393,0.005-0.578-0.207-0.571-0.586c0.007-0.362,0.203-0.533,0.569-0.53C19.096,53.682,19.25,53.887,19.276,54.214z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M81.511,53.682c0.411,0.007,0.549,0.239,0.538,0.584
+        c-0.012,0.362-0.218,0.539-0.577,0.528c-0.398-0.011-0.563-0.249-0.54-0.617C80.955,53.813,81.179,53.655,81.511,53.682z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M67.548,35.755c-0.015,0.41-0.211,0.572-0.574,0.567
+        c-0.374-0.004-0.548-0.208-0.547-0.558c0.002-0.383,0.22-0.573,0.603-0.557C67.401,35.223,67.549,35.447,67.548,35.755z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M77.936,64.652c0.326,0.001,0.542,0.16,0.554,0.528
+        c0.013,0.384-0.187,0.594-0.567,0.592c-0.353-0.002-0.548-0.185-0.549-0.557C77.372,64.851,77.545,64.663,77.936,64.652z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.735,59.18c-0.003,0.363-0.183,0.543-0.551,0.543
+        c-0.368,0.001-0.558-0.186-0.563-0.54c-0.006-0.381,0.198-0.583,0.583-0.574C22.569,58.617,22.739,58.82,22.735,59.18z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M78.021,59.721c-0.341,0.015-0.545-0.146-0.556-0.518
+        c-0.012-0.381,0.165-0.595,0.557-0.595c0.362,0,0.556,0.196,0.559,0.551C78.583,59.507,78.415,59.721,78.021,59.721z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M61.465,33.877c0.392-0.01,0.572,0.178,0.576,0.541
+        c0.003,0.355-0.167,0.563-0.533,0.572c-0.385,0.009-0.591-0.194-0.584-0.575C60.931,34.063,61.115,33.864,61.465,33.877z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M50.665,68.869c-0.014,0.331-0.158,0.547-0.537,0.557
+        c-0.36,0.009-0.574-0.151-0.588-0.515c-0.015-0.371,0.161-0.599,0.556-0.603C50.46,68.306,50.64,68.502,50.665,68.869z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M45.411,71.025c0.005,0.368-0.189,0.556-0.544,0.559
+        c-0.381,0.003-0.577-0.2-0.567-0.589c0.01-0.374,0.219-0.53,0.574-0.525C45.238,70.475,45.421,70.656,45.411,71.025z"/>
+      </g>
+    </svg>
+
+
+  </p>
+</section>
+
+<section id="projeto" class="none">
+  <h1>Estes s&#227o meus projetos!</h1>
+  <p> Aqui est&#227o alguns dos meus projetos, dentre p&#225ginas desenvolvidas como passatempo &#224 projetos como Web designer, al&#233m de alguns estudos interessantes. </p>
+  <hr>
+
+  <table>
+   <tr>
+
+    <th colspan="2"><span> DESENVOLVENDO </span> Taverna dos Loucos </th>
+    <th>
+    </tr>
+    <tr>
+     <td>
+      <img src="https://images.unsplash.com/photo-1526315431739-99f023fe106c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e9f08d5009951c73243790d39a7a9e16&auto=format&fit=crop&w=750&q=80" alt="lokos">
+    </td>
+    <td>
+      <p> O "Taverna dos Loucos" &#233 um site que estou desenvolvendo junto alguns amigos para falar sobre assuntos nerds, coisas aleat&#243rias como comandos de Windows, conversas sobre m&#250sica, how-to-do's. Bem interessante.</p> 
+      <p><a href="Projects\Taverna dos Loucos\index.html" target="_blank">Saiba mais...<i class="material-icons">launch</i></a>
+      </p>
+    </td>
+  </tr>
+</table>
+<hr>
+<table>
+  <tr>
+    <th colspan="2"><span> DESENVOLVIMENTO </span> Tradutor de Aurebesh </th>
+  </tr>
+  <tr>
+    <td>
+      <p> O tradutor de Aurebesh &#233 mais uma de minhas loucuras. Este projeto começou quando aprendi Aurebesh, que &#233 um sistema de escrita da saga <em>Star Wars</em>.<br>Nesta página ha um tradutor de Aurebesh al&#233m de uma se&#231&#227o contando um pouco mais sobre a escrita e um tutorial com sobre como escrever. </p>
+      <p><a href="Projects\Aurebesh\index.html" target="_blank">Saiba mais...<i class="material-icons">launch</i></a> </p>  
+    </td>
+    <td>
+      <img src="https://images.unsplash.com/photo-1459876947801-8879713c9b47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=980d25099d8c902a656e9dfbdef91fb1b&auto=format&fit=crop&w=750&q=80" alt="troopers">
+    </td>
+  </tr>
+</table>
+<hr>
+<table>
+  <tr>
+    <th colspan="2"> <span>DESENVOLVENDO</span> Blog on Sololearn</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://images.unsplash.com/photo-1508830524289-0adcbe822b40?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=377e356cce015c363d123504857f8137&auto=format&fit=crop&w=711&q=80">
+    </td>
+    <td>
+      <p>
+        Nada mais &#233 do que essa p&#225gina publicada no Sololearn. Se quiser dar uma olhada, aqui est&#225 o <a href="https://code.sololearn.com/W8ev94j304Dv/?ref=app" target="_blank">link<i class="material-icons">launch</i></a>.
+      </p>
+    </td>
+  </tr>
+</table>
+<hr>   
+<table>
+ <tr>
+  <th colspan="2">Rock & Burguer</th>
+</tr>
+<tr>
+  <td>
+   <p> O tradutor de Aurebesh &#233 mais uma de minhas loucuras. Este projeto começou quando aprendi Aurebesh, que &#233 um sistema de escrita da saga <em>Star Wars</em>.<br>Nesta página ha um tradutor de Aurebesh al&#233m de uma se&#231&#227o contando um pouco mais sobre a escrita e um tutorial com sobre como escrever. </p>
+   <p><a href="Projects\Rock&Burguer\index.html" target="_blank">Saiba mais...<i class="material-icons">launch</i></a> </p>
+ </td>
+ <td>
+   <img src="Projects\Rock&Burguer\images\rb sl-crop-u73632.jpg" alt="Você não possui acesso ao Facebook...">
+ </td>
+</tr>
+</table>
+<hr>
+<table>
+
+  <tr>
+
+    <th colspan="2"><span> DESENVOLVIMENTO </span> Central de Arquivos </th>
+
+  </tr>
+
+  <tr>
+    <td>
+
+      <img src="https://images.unsplash.com/photo-1463527882365-18201e85a091?ixlib=rb-0.3.5&s=0ba63ae4d4d23611363f2aac2ef5f3c9&auto=format" alt="troopers">
+
+    </td>
+    <td>
+
+      <p> A central de arquivos é a página onde deixo disponível para acesso/download meus arquivos APKs de arwuivos crackeados ou arquivos em PDF.</p>
+
+      <p><a href="Projects\Downloads\index.html" target="_blank">Saiba mais...<i class="material-icons">launch</i></a> </p> 
+
+    </td>
+
+  </tr>
+
+</table>
+
+
+</section>
+
+<section id="blog" class="none">
+  <h1>Diary </h1>
+  <p> Aqui est&#227o as atualiza&#231&#245es dos meus c&#243digos e coisas novas que tenho aprendido.</p>
+  <hr>
+  <div class="card">
+    <p class="cred">
+      <span class="label"> base </span>
+    </p>
+    <div class="desc">
+      &lt;div class="card"&gt;<br/>
+      &nbsp;&nbsp;&lt;p class="cred"&gt;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="label"&gt; Titulo &lt;/span&gt;<br/>
+      &nbsp;&nbsp;&lt;/p&gt;<br/>
+      &nbsp;&nbsp;&lt;div class="desc"&gt;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="data"&gt;DIA, dd/mm/aa&lt;/span&gt;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br/>
+      &nbsp;&nbsp;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+    </div>
+  </div>
+  <hr/>
+  <div class="card">
+    <p class="cred">
+      <span class="label"> GREAT NEWS!!! </span>
+    </p>
+    <div class="desc">
+      <span class="data">QUI, 22/11/18</span>
+      <p>
+        Então, hoje eu aprendi um pouco sobre como utilizar o <strong>Github</strong> e sua função de publicação de páginas, também aprendi a configurar o font-face de modo que minha página de Aurebesh agora funciona em qualquer dispositivo, não precisando instalar a fonte.
+      </p>
+      <p>
+       Faz tempo que não atualizo o blog então resumirei as novidades:
+     </p>
+     <ul>
+       <li> Blog foi ao ar;</li>
+       <li> Aprimorei meus conhecimentos em batches, agora sei fazer um bocado de coisas; </li>
+       <li> Aprendi um pouco sobre importação de dados no excel (estou fazendo os relatórios da Beltis);</li>
+       <li> Já peguei um certificado pelo Devmedia, coisas que ja sabia mas pude aprender algumas outras coisas interessantes e úteis;</li>
+       <li> Decidi recriar o blog outra vez então zerei ele e estou reorganizando as pastas e arquivos e vou reescrevendo. E um amigo irá me auxiliar a produzir a página sobre aurebesh então ela também será atualizada.</li>
+     </ul>
+     <p> Por hora é isso <script>document.write( uname )</script>, bora lá!!</p>
+   </div>
+ </div>
+ <div class="card">
+  <p class="cred">
+    <span class="label"> News </span>
+  </p>
+  <div class="desc">
+    <span class="data">SEG, 05/11/18</span>
+    <p>
+      Hey <script>document.write( uname )</script> o/
+    </p>
+    <p>
+      Então <script>document.write( uname )</script>, eu fiquei um bom tempo sem mexer com html e programação e fiquei um bom tempo sem incluir novidades aqui. Bem... Aprendi bastante coisa com arquivos em lote (.bat), inclusive arrumei a da preventiva kk havia incluido uma área similar a da Wiki com informações dos clientes e tals mas no fim se mostrou bem inútil. Pelo menos exercitei a criação de menus... e isso me ajudou a compreender um pouco melhor a lógica necessária para programção ou para elaborar qualquer coisa que envolva código. 
+    </p>
+    <p> A grande novidade é que minha namorada me ajudou a começar a investir nisso. Agora estou com uma assinatura MVP no portal do DevMedia e vou investir em estudos para me tornar Front-end e futuramente fullstack. É isso ai <script>document.write( uname )</script>.</p>
+    <P>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Thats_all_folks.svg/256px-Thats_all_folks.svg.png" alt="That's all folks!">
+    </P>
+  </div>
+</div>
+<div class="card">
+  <p class="cred">
+    <span class="label"> Design </span>
+  </p>
+  <div class="desc">
+    <span class="data">SEG, 02/07/18</span>
+    <p>
+      Mudei de novo. O que eu tava começando do zero não tava legal e eu tava gostando do antigo. Talvez eu tenha apenas que mudar as cores, ajeitar as fontes, arrumar algumas viadage que não tá 100% mas voltei a ele, espero que goste.
+    </p>
+  </div>
+</div>
+<div class="card">
+  <p class="cred">
+    <span class="label"> Site </span>
+  </p>
+  <div class="desc">
+    <span class="data">TER, 26/06/18</span>
+    <p>
+      Cansei. Estava legal? sim, mas eu cansei. Apenas isso. Estava começando a me perder no que estava fazendo e perder o sentido da coisa e simplesmente não saber por o que fazer a seguir, o que arrumar ou incluir então... zerei. Comecei do zero. Talvez reaproveite alguns fatos do blog anterior além do que já está escrito. Me desejem sorte >.<
+    </p>
+  </div>
+</div>        
+<div class="card">
+  <p class="cred">
+    <span class="label">Elaborando Batches</span>
+  </p>
+  <div class="desc">
+    <span class="data">QUA, 20/06/18</span>
+    <p>
+      Hoje estive mexendo com Batches do Windows e estava fazendo uma para utilizar no checklist, para fazer os pings da Prodam. Montei com direito a menuzinho e tudo. Estou gostando dessa brincadeira, quem sabe eu não cambe para a área da programação.
+    </p>
+    <p> <a href="assets\Prodam.bat" target="_blank" download="arquivos\Prodam.bat"> Dá uma olhada na Batch que eu fiz para os testes da Prodam.<i class="fa fa-file-text" aria-hidden="true"></i></a>
+
+    </p>
+  </div>
+</div>
+
+<div class="card">
+  <p class="cred">
+    <span class="label"> Oncopy function </span>
+  </p>
+  <div class="desc">
+    <span class="data">TER, 08/05/18</span>
+    <p>
+    Hoje eu tava lendo algumas funções tipo onclick e oncopy, que atuam no momento em que a ação bem intuitiva é iniciada, por exemplo a onclick quando o botão ou link é clicado e a oncopy quando o texto é copiado.</p>
+
+    <blockquote cite="https://www.w3schools.com/jsref/event_oncopy.asp">
+      <span id="x" oncopy="copia()"><span>&lt;</span>input<span> type<span>="text"</span> oncopy<span>="myFunction()"</span> value<span>="Try to copy this text"</span>&gt;</span></span><br>
+      <span id="xx" oncut="cortar()"><span>&lt;</span>input<span> type<span>="text"</span> oncut<span>="myFunction()"</span> value<span>="Try to cut this text"</span>&gt;</span></span><br>
+      <span id="xxx" onpaste="cola()"><span>&lt;</span>p<span>&gt;</span> contenteditable="true" onpaste="myFunction()">Try to paste something inside this paragraph<span>&lt;</span>/p<span>&gt;</span></span>
+    </blockquote>
+
+    <p contenteditable="true" onpaste="cola()" oncopy="copia()" oncut="cortar()">Escreva, copie, recorte ou cole aqui e veja a mágica.</p>
+
+    
+  </div>
+</div>
+
+<div class="card">
+  <p class="cred">
+    <span class="label"> Menuzinho ta funfando!!! </span>
+  </p>
+  <div class="desc">
+    <span class="data">SAB, 28/04/18</span>
+    <p>
+      Finalmente consegui fazer o menu lateral funcionar. configurei para aparecer ele em telas pequenas mas quando direcionava para uma se&#231&#227o o menu n&#227o fechava. Hoje eu tive a grande ideia de colocar a fun&#231o do 'x' que fecha o menu nos links tamb&#233m...<br>
+      FUNCIONOU!!!
+    </p>
+    <p>
+      Agora &#233 arrumar a formata&#231&#227o.
+    </p>
+  </div>
+</div>
+
+<div class="card">
+  <p class="cred">
+    <span class="label"> Conversando com o Leitor </span>
+  </p>
+  <div class="desc">
+    <span class="data">SEG, 28/04/18</span>
+    <p>
+      Hoje eu estava navegando no sololearn quando me deparei com um c&#243digo onde, atrav&#233s de Javascript, &#233 poss&#237vel pegar um nome indicado pelo leitor atrav&#233s do pop-up e inser&#237-lo no site em v&#225rios pontos. Como no "Bem vindo". Estou me controlando para n&#227o sair colocando em tudo.
+    </p>
+    <p>
+      Basicamente, voce vai escrever a fun&#231&#227o:
+    </p>
+    <blockquote>
+      var uname=prompt("Hey, qual seu nome?");
+    </blockquote>
+    <p> E inserir o script abaixo aonde quer que o nome apare&#231a.</p>
+    <blockquote>
+    document.write( uname ) </blockquote>
+    <p> Entendeu <script>document.write( uname )</script>?
+    </p>
+  </div>
+</div>
+
+<div class="card">
+  <p class="cred">
+    <span class="label"> Digievolu&#231&#227o </span>
+  </p>
+  <div class="desc">
+    <span class="data">DOM, 22/04/18</span>
+    <p>
+    Hoje eu comecei a atualizar o blog. Coloquei os primeiros cards e formatei eles. Estou gostando deste projeto, esta bem interessante. O lado negativo &#233 que acabo passando ainda mais tempo voltado ao celular, preciso aprender a conciliar isso.</p>
+    <p> Uma coisa que eu aprendi hoje &#233 a bloquear a sele&#231&#227o do texto, ou seja, n&#227o d&#225 para selecionar o texto, ou deixar para selecionar apenas o par&#225grafo inteiro. para isso basta colocar o c&#243digo abaixo no css:</p>
+    <blockquote>
+      <i class="material-icons">content_copy</i><br>
+      -webkit-user-select:none; /* Safari 3.1+ */<br>
+      -moz-user-select: none;/* Firefox 2+ */<br>
+      -ms-user-select: none;/* IE 10+ */<br>
+      user-select: none; /* Standard syntax */ 
+    </blockquote>
+    <p>A sintaxe deste atributo &#233:</p>
+    <blockquote>
+     user-select: auto | none | text | all;
+   </blockquote>
+
+ </p>
+</div>
+</div>
+
+<div class="card">
+  <p class="cred">
+    <span class="label"> Decep&#231&#227o </span>
+  </p>
+  <div class="desc">
+    <span class="data">SEX, 20/04/18</span>
+    <p>
+    Bom... eu desenvolvi tudo no celular, ficou bonito, gostei do resultado. Me surpreendeu. Mas eu aprendi algo muito importante:</p>
+    <blockquote>O tamanho do dispositivo usado para desenvolver pode e VAI influenciar no resultado final. </blockquote>
+    <p> Ta, isso &#233 bem l&#243gico. Eu sei <script>document.write( uname )</script>. Mas eu me empolguei, esqueci, contece posha. Mas quando eu abri a p&#225gina no desktop ficou tudo estranho e fora de formata&#231&#227o.
+    </p>
+  </div>
+</div>
+
+<div class="card">
+  <p class="cred">
+    <span class="label">Cria&#231&#227o do Blog</span>
+  </p>
+  <div class="desc">
+    <span class="data">QUI, 19/04/18</span><br>
+
+    <p> Hoje eu passei a noite criando esta p&#225gina, nela eu vou deixar sempre atualiza&#231&#245es sobre meus c&#243digos, coisas que aprendi, sites novos que esteja desenvolvendo. Bom, foi trabalhoso por&#233m prazeroso demais criar tudo isso. Divirtam-se!! </p>
+  </div>
+</div>
+</section>
+
+<section id="yo" class="none">
+  <h1>"Quem sou eu?"</h1>
+  <table>
+    <tr>
+     <td><img src="https://scontent.fcgh4-1.fna.fbcdn.net/v/t1.0-9/21369607_1199311573508196_5159172605417648343_n.jpg?_nc_cat=102&_nc_ht=scontent.fcgh4-1.fna&oh=b6140a67e19ac46adba9823e6a2a44ea&oe=5C7577D1" alt="Minha foto" ></td>
+     <td>
+      <p> Ora ora jovem <script>document.write( uname )</script>. Muito prazer, meu nome &#233 Rodrigo Cordeiro, brasileiro de 19 anos, nasci e cresci em S&#227o Paulo, mais espec&#237ficamente em Guarulhos. libriano, amante da arte, fa&#231o do desenho minha filosofia e linguagem. </p>
+    </td>
+  </tr>
+</table>
+<div id="contato">
+ <h1> Entre em contato! </h1>
+ <p> Entre em contato comigo por e-mail ou mande mensagem via Whatsapp.</p>
+ <ul>
+   <li><i class="fa fa-whatsapp"></i><a href="tel:+5511985635792">+55 (11) 98563-5792</a></li>|
+   <li><i class="fa fa-instagram"></i><a href="https://www.instagram.com/drigo_cordeiro/" target="_blank">Drigo_cordeiro</a></li>|
+   <li><i class="fa fa-envelope"></i><a href="mailto:conceptive.co@gmail.com&subject=Sobre%20o%20seu%20Blog&Cco=rodrigomendoncca@gmail.com">conceptive.co@gmail.com</a></li>
+ </ul>
+ 
+</div>
+</section>
+</div>
+</body>
+</html>
