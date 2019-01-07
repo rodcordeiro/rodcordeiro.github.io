@@ -1,4 +1,4 @@
-﻿/* Os efeitos de links e botões estão ao fim da página */
+/* Os efeitos de links e botões estão ao fim da página */
 @font-face {
     font-family: 'Daedra-Bold';
     src: url('https://rodcordeiro.github.io/shares/fonts/daedra/Daedra-Bold.eot');
@@ -50,9 +50,11 @@ body{
     margin: 2% 10%;
     margin-top: 6%;
     padding: 3px;   
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
-
+.obs{
+    font-size: 0.8rem;
+}
 /*
 #escolha div, ul, li{
     border: 1px solid black;
