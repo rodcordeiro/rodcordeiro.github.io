@@ -1,0 +1,264 @@
+<!-- 
+	HAWKING ASCII ART 
+	CREATED BY: VITRUVIAN
+	MAY 8, 2018
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>JACK ART </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css' />
+    <style>
+    /*
+	HAWKING ASCII ART 
+	CREATED BY: VITRUVIAN
+	MAY 8, 2018
+*/
+body {
+	font-family: "Droid Sans Mono", "Lucida Console", "Andale Mono", "Courier New", "Courier", monospace;
+	font-size:4px;
+	font-weight:bold;
+	margin:0;
+	background-color:#000000;
+	color:#ffffff;
+}
+#progress {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:20px;
+}
+#art {
+	position:relative;
+	margin:auto;
+	width:400x;
+	height:800px;
+	overflow:hidden;
+}
+.character {
+	position:absolute;
+	text-align:center;
+}
+
+    </style>
+	</head>
+	<body>
+		<div id="art">
+			<progress id="progress" max="100" value="0"></progress>
+		</div>
+    <script>
+    /*
+	HAWKING ASCII ART 
+	CREATED BY: VITRUVIAN
+	MAY 8, 2018
+*/
+var art = [
+"                                                                                                                                                                                                                                                                                                            ",
+"                                                                                                                                                                                                                                                                                                           ",
+"                                                                                                                                                                                                                                                                                                           ",
+"                                                                                                                                                         -/sssss/.                                                                                                                                          ",
+"                                                                                                                                                     `-+hyo:...-oyyy:`                                                                                                                                      ",
+"                                                                                                                                                     +yo.`     `-../dyso-.```````                                                                                                                           ",
+"                                                                                                                                                   `yy+   `.+hmNy:` `.:+ssssssssyyyyyys+::-.                                                                                                                ",
+"                                                                                                                                                -+ssM/`  .+dMMMMmhysoo/.`````````````-:++osyso/`                                                                                                            ",
+"                                                                                                                                           `-+syy++my-  .yNMMMMMMMMMMMNmmo:.              `../oyh+:-                                                                                                        ",
+"                                                                                                                                        `/syo+:`` /M.`  dNMMMMMMMMMMMMMMMMNd+.                ``-/sho-`                                                                                                     ",
+"                                                                                                                                     .:syo/-      :N   `MMMMMMMMMMMMMMMMMMMMMdo.                  `./ss+.`                                                                                                  ",
+"                                                                                                                                   `+hho.`        `:  `:MMMMMMMMMMMMMMMMMMMMMMNh`                    `:sdo:                                                                                                 ",
+"                                                                                                                                `:oho:.               :dMMMMMMMMMMMMMMMMMMMMMMMMd:                     `mdhys:`                                                                                             ",
+"                                                                                                                              `-yyo-`                 /MMMMMMMMMMMMMMMMMMMMMMMMMMy/                     `..`sdy-                                                                                            ",
+"                                                                                                                             -oh/.                   -sMMMMMMMMMMMMMMMMMMMMMMMMMMMy`                     os: :sm.`                                                                                          ",
+"                                                                                                                            oyo-                     sNMMMMMMMMMMMMMMMMMMMMMMMMMMMd/                     -sN``-yd:                                                                                          ",
+"                                                                                                                         `:hy:`              ``     -hMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo                      -yh- `N+.                                                                                         ",
+"                                                                                                                        .shs`               `sy/    mhhhMMMMMMMMMMMMMMMMMMMMMMMMMNy.                       `M/` oy+                                                                                         ",
+"                                                                                                                    ``.:dmdooo/              -+o`   /. `+hNNMMMMMMMMMMMMMMMMMMNNs/.                         ys/ `hy                                                                                         ",
+"                                                                                                                  `:ssyy++/:--.                          `.-yhdmMMMMMMMMMMNdhs/.`                           -yy  yh.                                                                                        ",
+"                                                                                                                 .+N/.  ``....````    ``s-                    `.//++oo+++/:.                                `hy  +so                                                                                        ",
+"                                                                                                                 oyo `-ommmmmmmmmhs+/+ymy-                                                                  `hy  -+d                                                                                        ",
+"                                                                                                                 +so odMMMMMMMMMMMMMMMMMo.          so+/-.``                                                .hy  .+M                                                                                        ",
+"                                                                                              ``.------.         `+N`./hMMMMMMMMMMMMMMMMN/    `-`   dNNNNmdy                                                oy+  .+M                                                                                        ",
+"                                                                                         .:oosydNNmhsss+          :Nd:``MMMMMMMMMMMMMMMMM/   .+M+.   /osoo/`                                                N+.  .oM                                                                                        ",
+"                                                                                     `-ohhs/.:sN+:.``             :Ny:` hNMMMMMMMMMMMMMMM/   sNMm:                                                        `.M+`  :oh                                                                                        ",
+"                                                                                    .sho`   :hh-                  /M`   .hMMMMMMMMMMMMMMM/   yMMMs-                                                      /shsy+  oy:                                                                                        ",
+"                                                                                    mo-`    No.                   /M`    omMMMMMMMMMMMMMh-   yMMMo.                                                   `. /hM .`  yy`                                                                                        ",
+"                                                                                  `:d:-y-``-m:                    /M-`   .+MMMMMMMMMMMMM.`   /yNs-                                                    .o+hdy`   `yy                                                                                         ",
+"                                                                                  -h/``:ho/:m:                    -ho.    .+NMMMMMMMMNh:      `-                                                     ``.Ns:`d:  +o/                                                                                         ",
+"                                                                                  -s+.  .+yhMho/-``               ./d:      /oydmmdhs:`                                                             .+hm+.  y-  m+.                                                                                         ",
+"                                                                                  `.m/`   `.::/osyyysyso:--...``   `M/        `.--.`                                                      `.    y:`.ydy-       `M/                                                                                          ",
+"                                                                                    ohy-        ````.-::+oosssss+///M/                                                                    .//. `shhyo-`       ./d:                                                                                          ",
+"                                                                                     -odo-`                  `.-///+N+.                                                           `.    ``..mysyo/-`          :N-`                                                                                          ",
+"                                                                                      `.yhs/`                       /s+                                              ..`    /.    :d:::/oddso:..             .oN                                                                                            ",
+"                                                                                         ./+ys+.``                  `yy                                              ./y`   +/:.ooyhNy+//++/                 sh/                                                                                            ",
+"                                                                                            .:+sy+/:`                sh:                                        `     ./s/:/yyysm+..+-`   -o                +ys                                                                                             ",
+"                                                                                                .:+oys+:``           -om                                      `.h+/+sssssdd+:.  :-.                       `-N/`                                                                                             ",
+"                                                                                                   `.-/sys+-`         :m+.                           ..`  `-:/oydsosy/..`./y     ``                      .+d-`                                                                                              ",
+"                                                                                                         :+oys/`      `-N+.                          -+sssss+/-`    +:.   .+                           `/hh:                                                                                                ",
+"                                                                                                            -+sh:`      +hs.                        :sdhys+`         ``                              `-oh/.                                                                                                 ",
+"                                                                                                              `-hy/      :sd.`                   .:sy+-  +s+                                       `/syo`                                                                                                   ",
+"                                                                                                                .hy`      ./h/.               `-+ys:`    `.:`                                    ./hd+.                                                                                                     ",
+"                                                                                                                 yy-+-`     -yh+`   :.` .::`:oshm/`                                          `./ohho                                                                                                        ",
+"                                                                                                               `:dmsm:       .+Mho//dys+shdd+:-`+:-`                                       `+ydd+-`                                                                                                         ",
+"                                                                                                           `-/sdMNds        -+sysdNM+/:-..:y+.`  /+-                                     `:sNy/`                                                                                                            ",
+"                                                                                                 ````.-:+syydmdy/:.   ```-+ydo-` ./sy+-`   `:.`                                       ``oyy+-`      ```...``                                                                                                ",
+"                                                                                          ``:/++ssyysss+:-.`  ``-///osyyso:`        `+hN+/:`                                       `/oshM+`     `:/+syyssyyh-`                                                                                              ",
+"                                                                                        .ohho+/:-..`````-:+syyhhso+/:-.`             ohh:/ohy+-`                               `.oyhy+:.M/   `-shyo:-`    ./m:                                                                                              ",
+"                                                                                        Mo-  -/+syhyymmyo/-.                        sy+     -oyyhs+//:-.`              `.-:/+shdyo:   .+d:`-oyy+            ys/                                                                                             ",
+"                                                                                       `M/  odh/-.` .hy                           `:N/          .-:/++osyhhyyyyyyyyyyhyyydds/:-.      :mmhhh/.`             `yy                                                                                             ",
+"                                                                                        M+. s-      +s+      `.://+ooooooo+//-`   /M.`        `-/syhhhhy/.` ```````      /so          /M-`   `-/y-           yy`                                                                                            ",
+"                                                                                        /ys         +s+   `:yhyo///:-..--://osyyo/oM         +hm/-.```./oys/             .+m         .+N    :yyo-`           os:         ``                                                                                 ",
+"                                                                                         :sm:`      -ys./yhy`.-:+++++o/       ``ohmM      `.Ny/          `:hh/`          :od         +ss  -odhhyydy-         -+h         :yN-`                                                                              ",
+"                                                                                          `:dy+     `yNh+-``shh+/-..-::          .+M      :d/.              +ys.         oy+         yh- +ys.`   :sN`        `+N          /Mm:                                                                              ",
+"                                                                                            `:oho:. -hy--/sy/.`  ```...`          :N.`   +ss                 ./d:`       yh`         yh`dy/       ./d:        /M`         /MM/`                                                                             ",
+"                                                     `.:///:`                     `.:+ossssss+-`+sysmo/+ds:`.+ssyyhhdddhs/.       ./`    yh.                  `-No-     `hy         `hmyo-          M/        :ds-       -+hN+`                                                                             ",
+"                                                `-/ymNNNNNNNmdo.             .:/dmmNNMMMMMMMMNNms+ohMmdh.`:yNMMMMMMMMMMMMNy.             yh.                    .sy/    :ys         .hmy            d+-       `-M+`     `yy.N+`                                                                             ",
+"                                               `smNMMMMMMMMMMMNm.`          odNMMMMMMMMMMMMMoo+o+++oMh+` +dMMMMMMMMMMMMMMMmo        ++:  /oo                     `:ys-  do:         :ys`            /s+         dhs/```.ys/ M/`                                                                             ",
+"                                              :dMMMMMMMMMMMMMMMMm:       `/mMMMMNmmNMMMMMMMM -+yy/. d:  `hMMMMMMMMMMMMMMMMms        :hh-  /N`                      `oss+M/`         s/-             `yy         .ymdyyyy-``.N:                                                                              ",
+"                                             .oMMMMMMMMMMMMMMMMMMo-      odMMhso/:::ooyNMMMM``./MNy.`   `hMMMMMMMMMMMMMMMMh-         +yd  :my-                       `:yN:          d/`              yy-         -oN+-``  -yo.                                                                              ",
+"                                             sNMMMMMMMMMMMMMMMMMMd+     -ydy-`        `./hNM-`/NMMNm     smMMMMMMMMMMMMMMmo          `/M  .oMy:         ````          :d/.          M/               -om`         `-yyo: -om`                                                                               ",
+"                                             yMMMMMMMMMMMMMMMMMMMd+      --`             .+N+-+MMMMM`    `:sMMMMMMMMMMMMy:`           /M  -shsoo      .+syyso+/`     `/M`           M/                -ys-          ``` :hh-                                                                                ",
+"                                             yMMMMMMMMMMMMMMMMMMMs-                       `:d/+MMMMM`       -:odmNNNmdy:`            /oy  :N-``:y/-`  `-odNMMMNdh/.  oyo           `M/        ````      +so:.`     `.-/yh+.                                                                                 ",
+"                                             /yMMMMMMMMMMMMMMMMMM/                         `M//MMMNd           `.://..`             :hy` .+N    .+sy+-` `./dMMMMMNdo+dy`            M/  -/+++oooooo+++/: .:oso+++++osso/`                     ``-://++++++++o++++++/.`                                      ",
+"                                              -oNMMMMMMMMMMMMNNmmo:.                  `...:sM+:yMNy.                              .:d+. `sy:      `:+sys/:-:MMMMMMMMMNs`           .NdhhmNMMMMMMMMMMNmdh    `-::::::``              ``..-/oyhhhdmNNMMMMMMMMMMMMMMMMMmdyo.`                                  ",
+"                                               `-oyhMMMMMMMMho:`.+yh/.          `.://osdNNNMMmhhy:`                             `/sh-`  hds`         `../ossymMMMMMMMMms////::-.`:odMMMMMMMMMMMMMMmy/-``                        .://shmNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNs:`                                ",
+"                                                   `:/+ys+omo-    `:osso--..-+syhdNMMMMMMNNmho/:                              .:dNh.  -oMMNhys+:..``         /hMMMMMMMMMMMMMNNmddNMMMMMMMMMMMMMMNo-                      ``.:oyhdNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNh-`                              ",
+"                                                       `` `.hs/      `-/syhdNNMMMMMNmdhhy+-.`                               ./yNMmo  .+MMMMMMMNNmmds/:.      `+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNm-`                  `.:/+ydmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo-                             ",
+"                                                            `+yy`        `.-///////:-``                                  `-odNMMM+` `sNMMMMMMMMMMMMMMNdys:.`` :NMMmsmNMMMMMMMMMMMMMMMMMMMMMMMNy-          `````.:+syhmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNhso+++++++oydmNNMMMMMh-                            ",
+"                                                              -oh+-                                                   `-/hNNMMMMy-  omMMMMMMMMMMMMMMMMMMMNmms+odMMms./sMMMMMMMMMmdhdMMMMMMMMMs:-````.-::/+symmmmNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmdhy+:..``         ``..:sdmMMNm                            ",
+"                                                                :dmy:.                                          ```-sshNMMMMMMMM`  `MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMyyhMMMMMMy+/-.:yMMMMMMMMMMNmdhhhmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmh+/-.                       `-ymMM.`                          ",
+"                                                              `:mNMMNmy:`                                  `--:/ydmNMMMMMMMMMMd+  -hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNhohdNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNm-.`                             `+hMs-                          ",
+"                                                             :yMMMMMMMMMdy+-                     ```.:/ossyhNMMMMMMMMMMMMMMMMMy  .+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNds:`                               :dN:                          ",
+"                                                            .yMMMMMMNmmddddhho/-.`   /oo/+oshhdddhhhhdmNMMMMMMMMMMMMMMMMMMMMMs-  smMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNh/                               `.`                          ",
+"                                                            hNMMmyso/-`     ./+oysso:..---:::///:-....-:++ooshmMMMMMMMMMMMMMy-  :dMMMMMMMMMMMMMMMMMMMMMMMMMMNyoooydMMMMMMMMMMMMMMMdooooshmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs-                                                          ",
+"                                                            ms/..`              ..-/yyhhys+/::----::/+osyyyyyyyhMMMMMMMMMMNm`  `NMMMMMMMMMMMMNmdMMMMMMMMMNmh.`   `/mMMMMMMMMMMNmy:`     `..-yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo`                                                        ",
+"                                                                                       `.-:+ooooooooo+/:-...dNMMMMMMMMMMMdo`  -yMMMMMMMMMMNmsoyNMMMMMMMNo:.         smMMMMMMNh+.             +dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNh`                                                       ",
+"                                                                             +hh:-.`            ```...-:ohdmMMMMMMMMMMMNs-`  :sMMMMMMMMMmyosmNMMMMMMms/-             :ommdy/-`               `+MMNh+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm/.                                                     ",
+"                                                                             `-sNNmhoo++++++ooosyhdmNMMMMMMMMMMMMMMMMds:    +dMMMMMMMmhssdNMMMMMMNds`                  ```                    /MMMd/MMNyMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd+                                                    ",
+"                                                                                -odNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmd:.` ../hMMMMMMMNssymMMMMMMNm+:.                                           /MMMd:MMh:MMMMMMMMMMMMMMMMMMMMMMMMMMMMMdyoosydmmNMMMMMMMMMh:`                                                 ",
+"                                                                                  .:ymMMMMMMMMMMMMMMMMMMMMMMMNdys:.``-/+dmNMMMMMMmyohmMMMMMMdy+`                                              :mMMh-NMmodNMMhNMMMMMMMMMMMMMMMMMMMMMMMh/   ```.:sdNMMMMMMMNh+                  ``                            ",
+"                                                                                     -/omNNMMMMMMMMMMMMNdyo//:-..:ohdmmhsmMMMMMMysyNMMMMMNh/.`                                                :dMMd+ymNm/dMM./sNMMMMMMMMMMMMMMMMMMMMMMd:        .:sNMMMMMMMMho:.             :sy                            ",
+"                                                                                        `-/syhmNMMMMMMmysoooyhdmymMMMMh:NMMMMMmyymMMMMMNy:`                                                   :dMMNh/dMM-hMMh:.:dNMMMMMMMMMMMMMMMMMMMMMN          `-hNMMMMMMMMNm+/:.        -yds                            ",
+"                                                                                             `.:///+osyhmNMMMMmoymMMMyshMMMMNhydMMMMMms:                                                      :NMMMM:dMM-hMMmh+ .+hNMMMMMMMMMMMMMMMMMMMM-`           -omNMMMMMMMMMNdhhyyyyhhmNh-                            ",
+"                                                                                                    ````+dMMMMh:MMMMNosMMMMNohmMMMMMs:`                                                       :NMMMM-hMM:dMM-hd+  -+NMMMMMMMMMMMMMMMMMMMy-             `+sdNMMMMMMMMMMMMMMMMMd+                             ",
+"                                                                                                      ./NMMMMhyhMMMM/hmMMNd+dNMMMNh/                                                          :NMMMMomMM/dMM:dMMo-  :ymMMMMMMMMMMMMMMMMMM/                .:+hmNNNNMMMNNNNmy/.                              ",
+"                                                                                                    `/yNMMMMMooMMMMN:hMMMsohMMMMm+.                                                           /MMMMMymMM:dMM/dNmNy/` `:yNMMMMMMMMMMMMMMMM+`                  `..:/osso+/-..`                                ",
+"                                                                                                  `.ymMMNMMMmosMMMmohNMMoshMMMMN-`                                                           `+MMMNmomMM:dMM/dmydNmy.`  /ymMMMMMMMMMMMMMMd+                                                                 ",
+"                                                                                                `-omMMNdydmM+ymMMMh-MMNm/dMMMNy-                                                             +dMMNy.ymMM/dMM/dNmymMMd+.  `:smNMMMMMMMMMMMMd:                                                                ",
+"                                                                        `.:ossso`             `-ymMNyssydNMMsmMMMmyoMMd/NMMMNo.                                                            `omMMms/.NMMN/dMM/dMM:dMModd/    -+hNMMMMMMMMMMMM:.                                                              ",
+"                                                                      `-yyyhdNmyd:          .+ymmdy+hdNMMNmmNMMMMssNMMd:MMMMo.                                                           `:sMMNm+hy-MMNdomMN+dMM.hMM-hMN/.    .:dNMMMMMMMMMMNs:`                                                            ",
+"                                                                      /N:`   /ymmo-     ``:oNNmyoshMMMMNyssyMMMMMooMMMd/MMNd                                                          `.odNMNhs+MMh-MMmodNmyymMN/dMM:dmsMh/`     :shNMMMMMMMMMNh+-`         `--`                                            ",
+"                                                                      /M      /M:hs`  `.shmMmssdNMMMMNhoydNMMMMMMooMMNh/MMh-                                                        .+ydMMNmoshNMdyoMMd/MMd/NMNd+dNm+dh.MMNh`     `.:ymNMMMMMMMMNmho-..``.-:dmy-                                            ",
+"                                                                      /M     `+M /syoshMMmhssmMMMMNmysyNMMMNhdmMhoyMMdysMMy                                                     `-+sMMMMNhsomNMMMooNMMd:MMh-MMmsdNmohNh-MMNdd/`       ./sdNNMMMMMMMMMMNhdNMMMMy`                                            ",
+"                                                            `.....`   /M`    :oh`.oMMMMNoosdMMMMNhssdNMMNmhohdNMhsyMMysdMNs                                                  ``-dmNMMNds+ymMMMMMMooMMNh+MMh-MMd/NMd/NMh-MMd/Mmo          .-:hdmNNMMMMMMMMMMMmo-                                             ",
+"                                                         `-+mNNhsyso` :N.`   +yhdNMMmhsomNMMMmhyohNMMmhyosdMMMMMMddMMssmMmo                                                `+ymMMMNdyooyMMMMMMMMdsyMMssNMNh+MMd:MMh.MNh:MMd:Mmh+              `./ossssyyysss`                                               ",
+"                                                        .ohh/+ohh//yh:/m:`   +dMNNdoshmMMMMN+oydMMNm+oydNMMMNmy/smMMMssmMNy                                             `-+hMMMMNyoodNMMMMMMMMMM+hNMMooMMhydMMd:MMh-Mmy+MNh+MssN                       ``                                                   ",
+"                                                       `M+.     :dh.sdNNs-   /yNooyMMMMMmhs+NMMNhyssMMMMhyo/     omMMhyhMMh.                                          ./mNMMMmhyomMMMMMMMMMMMMMN+dMM+hmMMssMMysdMNh:MysdMysdM++M/.                                                                          ",
+"                                                       `M+`      oy/ .oNd:   -oNdNMMMMmy+ymMMdsodNMMMho:`        .+MMmhoMMmy                                        .odMMMMM+oydMMMMMMMMMMMMMMd+mNNd+dMMmyyMMooMMhyyMooMMooMM++Mm:                                                                          ",
+"                                                        /dh.     -+y./yMN:   `+MMMMMhoohMNmy/ohMMdo-M/            -sMMd:MMMM                                     ./sMMMMNds+NMMMMMMMMMMMMMMMMmhoMNh-MMMM/dMM+sdMMssMMooMMooMMssMM/                                                                          ",
+"                                                         -od      /MdNMMN:    /MMMd/ymNMy++hNMMM+.  M/             `MMh-MMMM`                                   ohNMMMNm/sdMMMMMMmddMMMMMMMMMsoNMsodMMNmomNm:dMMMooMmosMmosMMyyMM/                                                                          ",
+"                                                          -ys-    ./MMMMd:    /MhosMNdy+ymMNy:/M`   M/`             omNh+dMM-`                               -omMMMMNho/MMMMy+sM     `:hMMMM+hmMhshMMMh:MMh:MMMMoydM:hNM/hNMmyyMM/                                                                          ",
+"                                                    ````````M+.     ymMMNyosyydMmNmysydMMds:  -h+.  d+.             `hMM-hMM+.                              smMMMMMN/sdMMMmo  /M        /dNMsmMM-hMMMyohMysdMMMM-hMM-hMM-hMMsydMh-                                                                          ",
+"                                                -sdyyydNmhyyMMy`     smMdhs:`+hMNsomMMNh.`  `-+hmo- /so              +dMhyhMm:                           .+mMMMMMds+MMMMNy:   /M`         -omNd/NMMMsoyMmosMMMd+dNmohNmysmMM.hMM`                                                                           ",
+"                                                ms:   ./m/.-MMmy  `-shdh.`    ./NmNMMs:  ./sho/::osyoho              `/MMssMM/                          -yNMMMMM+sdMMMNh:.    -yy-  :-.     -+yNMMmshmMM/hNMMMh:MMh-MMh-MMMN.hd+                                                                            ",
+"                                                oys-    -odNMhhM/osh.ss`        .smM//+syyo-`     :mNo.               `:MyosM/                        ./NMMMMmhoNMNmy:``        NyooNddm:.`   ``hmdyMMNd+dMMMssNMsodMdysMMNhms:                                                                             ",
+"                                                 :ohs+-  `-+smMMMh+` ``          `-oMNh-``   .:osssy+.                  dmy.M+`                      :sMMMMMNddMMMh: `.-.`` `/osmNMMsoyMMdyo     -/oNMNhNMMMhsyMhosMMooMMMMN+.                                                                              ",
+"                                                   `.smm-`   -oNM/`                 .oyy-:+yys+-..``                    .hh-Ms-                     /dMMMMNmhs/./dd+dhs+NNmmNNMMMmhohmMMdosMms/-    `...:ymModNm/hMM+ymMMdo.                                                                                ",
+"                                                    odmdNs: ohhoM/                   `/Mmy+/``                           ydodh+                   .oNMMMMh+:-:/+omMM/.:yooooymMMyssdMMNh+hNMMdhmo-        :hMNh:mNmsodNN+-                                                                                  ",
+"                                                 .+mNhs+Mmmmm/` :`    `-/+oso+/-`   .oyh.`                               :sNsdy             .-:/osdMMNmy.`:dy+:-++/- sh+    `-oMdmNMmhysNMMNsoyMMms:      -yMysmMMmyds/.                                                                                    ",
+"                                                odmdosdNsydMy-      `/sh+-.`.:+ss:-/ds:`                                 `/MdNmooo/`     -/oysoo-.+Mdo:`  /M`        yy`      .oMMmy+ydMMMmoymMMhsyN:`   -sNhmMMMhso``   `.:oo+-                                                                            ",
+"                                             `/hNhsommhomNMMMh+.    yho`       `/hmm-`                                  `.oMMMMMMMNm::/sys+-.`    /M`     /M`   ----:hh-        :yddmNMMNsodMMNm/hNMNhs/yhs-ymMMo/::/+oyyys+:/sm                                                                            ",
+"                                            .sdN+shNhsyNMMMMMdhd/.  M+`          yd+                                 `:+sdNMMNdhMMNdoo+:``       :sd      -ys/:ohsoosmNmo+:`     `:smNMM+ydMMNh+mNMMh+::-.-+dysso+++:--.```` `+N                                                                            ",
+"                                          `-mmh+dNNhodNMMMNmosdMMds:M/           +s/                            ..:oddNMMNdyoyddMs:`          `.ohs. .--+osymy+:```.-yNMMNmds:.     .:omhNMMmssmMMMM/.   :sm.`               oy+                                                                            ",
+"                                         -oNyosNMdyoNMMMMmh+dNMMMhydN+-++++++///+ydd.`                      .:+odmNNMMNhyssyNNMMm:           -+ds:` +hdo/:-.``` :+syoydMmosMddyo/.     `:ohmydNMMMNm:`  /dy.              `.os+                                                                             ",
+"                                        +dmy+dNMysyMMMMMdssmMMNm/.-oMmmNomMMMMdoMMMMhhhh.`            `.-+shmNMMMNNmssyddNNNmNNM:`          /yy:  `.MMy       `-Nho. `-/mmmd+hNMNhys-.`   `-:shmNs/-  `.Nmdy.`       `..:oyh/.                                                                              ",
+"                                      .+NdyoNMNhodMMMMNhodNMMms-  :dMMMM.hMMMMh.MMMM/dMMs-        `:/oymNNMMMNmhhyysmmmddhyyssdM`           No.   ./MMy       :dm/`     :yhsNMMMhsyMNmy/     ``.ohy.  -yo--syo+/////+osss/.`                                                                                ",
+"                                    `/hNoshMMmh+MMMMMdy+MMMMh:` `odmMMMM-hNMMMd:NMMM/dMMh:`...-:yhdNMMMNNNdysyhhhmmhyhdmdmNMMMMM            mo-    `MMy`      /M/.       `-+mNmsohNMMNNN+.       /sh``/M.`  `-//////:-`                                                                                     ",
+"                                    odd+smMMmyyNMMMMdosNMMNh`   dNh-MMMMsshMMMmoyNMM/dMMMmdmmmNNMNmdhhysosymhyyyooydNNMMMMMMMMMM`           -yh:    smmo  ````+Mo.          .ohmNMMMdosmNo.      -oNhhhh                                                                                                    ",
+"                                  :yNsohMMMN+dNMMMMM:yNMMd+`   `NMmohNMMN+oMMMNm/dMM+dMMMNNNmhysyyyhyyhmysssyyhdMMMMMMMMNNNmsoyMy-           -omso/-/dMMyyhhhhdNNhso-.`       `:sdNm/hNMMmho...:shy:/hy                                                                                                     ",
+"                                 +hm+hmMMMmodNMMNmNMmNMMMds///oyMMMN/dMMM++MMMMM:dMMohNMmyooymNNdhhdysssmmNNMMMMMMMMdddhsooodmNMMo-   ``....` `.-/oyNMMNodNMMyosMMMMNmho:.      `./hNMMMh:-+ssss/:-.+yo                                                                                                     ",
+"                                ydh/mNMMMdyoMMMMNoohNNNNNNNNNNNNNMMM:hMMMsoyMMMM-hMMhhdMMMNNmhsosyhhNMMMMMMMNNNNhyssyyhhNMMMMMMMMNdosyyhddddhsss:ohNMNd+dNMNoydMMMMMNysdMdo.        /ymN``.-oosssssoo:`                                                                                                     ",
+"                              -smssNMMMMNosNMMMMMNdysyssoo++oosssydMoohMMNy-MMMMoydMmyyMMyoosdmmNMMMNNmmddddsoosdmNNMMMMMNNmmmmddyhMMMMMMMMMMsoMNMMMdosmMNhomNMMMMNdshmNNddm:`       `/mhhyy/-.....`                                                                                                        ",
+"                             /hM-hNMMMMM//+yssyymNMMMMMMMMMMMMMMMMMMm/+MMMh.MMMMmooMMssMMNmhyyysyyyyyyhyyyyhNNMMNmdhyyyyyyyyhyyyydNMMMMMMMMMMyyMMMmyodNMmyymMMMMMhssMMNmoshMM+.       ./d/`                                                                                                                 ",
+"                            :dd:hNMMMMMMmmmmmmmhsooooosoyyyyddmmmmNMM//MMMh-mNMMM++MMooMMmhyhdmmmmdddddmdhyssoossyhmmmmmddmNMMMMMMMMMNmNMMMMMMMMmyydMMNmodNMMMNm+ydMMmyoNMMMmms   ``--omy-                                                                                                                  ",
+"                           `MMh-MMMMMMMMMMMMMMMMMMMMMMMMNmdhhhhhhydMMs+yMMNh+dMMMo+mMsoNMMNdyyyysyysyyyshdmNMMMMMmhyooo+:--:MMMNymMMMdyoMMMMMMNd+hmMMdsoMMMMMNh+dNMMsshMMMmy-oysossysoooM/                                                                                                                  ",
+"                          :dMMms+osymmmmmmNNNNNNNNNNNMMMMMMMMMMMMMMNMmy:MMMM-hMMMmy+MmyoMMmsdmmddddmmmmmdyo+:--...``        mNNm/dMMMMmsMMMMNds+NMMMsoyMMMMMmssNMNh+mNMMmo:` `.-::::-:+h/.                                                                                                                  ",
+"                         .oMMMMMMMNmhyyyyyyysoosyyyyyyyyyyysssyyyyyyMMh.MMMM/ymMMMh-MMh-MMMMo+/::-.`                        omMN:dMMMMMMMMNdoshMMMdoomMMMMmsodMMyshMMmho   `ooososssoo/.                                                                                                                    ",
+"                         `/dmmmmmNNNNMMMMMMNNNNNNNNNNmmmmmmmmmmmmmmNMMd+mMMMNosMMMh:NMd+mNMM`                               :dMM-hMMMMMMmhssmNMMNssdMMMMmsohNNhodNMMh+-.-shh+:--```                                                                                                                         ",
+"                            ```.--::++osssssyyhhddmmNMMMMMMMMMMMNmdhMMMN+dMMMssmMMNd+dMN/dMMo.                              `hMM+dMMMMmyshmMMMNhymMMMNdssmMMyshMMMMMsssso/-                                                                                                                                 ",
+"                                             ```....-------------..`hNMM/dMMMNh/MMMM-hMM/hNMN/                               yMMNMMNdssdMMMMmysdMMMNssymMNhodNMMMMMM                                                                                                                                        ",
+"                                                                    -hMM:hNMMMmodNMMoymMNsyMMs-                             .hMMMmhosmMMMMNyodNMMMd+smMMysyNMhhMMMMN                                                                                                                                        ",
+"                                                                     yMMhosMMMMN:dMMNooMMyydMNs                          `-/dNMNssymMMMMmyshNMMMmyshMNdodNMMM++MMMmy                                                                                                                                        ",
+"                                                                     smMM++NMMMMsyhMMysdMMd/MMd:                        /ymNNdysdNMMMNdyodNMMNdyodNMhsyNMmmMMooMMMd+                                                                                                                                        ",
+"                                                                     -oMMmy/MMMMMooNMNh:MMNdomNm                     ./hMNdysydMMMMNysshMMMNs+ohMNdohNMMdsyMM++MMMd/                                                                                                                                        ",
+"                                                                      /MMMd/dNMMMmy/MMmsymMMohmM-`                `.+hmmyoshNMMMMmyoymNMMdy/odNMhsyNMMMMyyhMN++MMMd:                                                                                                                                        ",
+"                                                                      .oMMMN:hMMMMd/dNMM:hNMMysNm:              `/ydNy+/ymMMMMMNsydNMMMNooydMNhshNMMMMMMsdNMMooMMMh-                                                                                                                                        ",
+"                                                                       `MMMMyoyMMMMN:dMMmosMMNhoMy:           .:mNNmosymMMMMMmhsmNMMMmy+dNNNhsymMNdhMMMM+dMMMssMMMh-                                                                                                                                        ",
+"                                                                        omMMMsohMMMMyyhMMhssMMNhsmh-`/os.` `-odMNdhhmNMMMMNdsydMMMNNoshNNmhohNMMMhsoMMMM/dMMMooMMMd:                                                                                                                                        ",
+"                                                                         sNMMNh:NMMMMssNMMd/mNMM/hmdymMMmo/omNNdohmNMMMMdysomNMMNdy+mNNmssymMMMMMdyoMMMM/dMMMssMMMd/                                                                                                                                        ",
+"                                                                         .+NMMNh/dMMMNh+MMMN:hNMNooMMMMMMMMNdyssmNMMNmdsshmMMMmhoshMNhs+hNMMymMMMdyoMMMM:dMMMssMMMd+                                                                                                                                        ",
+"                                                                          .oMMMMoydMMMmodNMMdooNMmmMMMMMMNhoshmMMNNmssymMMMMmsoomNNm+oyNMMMM-hMMMmhoMMMM:dMMMssMMMmo                                                                                                                                        ",
+"                                                                            ymMMMysmMMMM/hNMMdsoMMMMMMMMMmdMMMNNyyssNMMMMNdsoymMNhs+dNMMMMMM+hNMMNhoMMNm/dMMMssMMMNh                                                                                                                                        ",
+"                                                                            `smMMNd+NMMMmssNMMmosmMMMMMMMMNmmyoommNMMMMNyoodNMNm+shNMNmmMMMMsydMMNhoMMmssmMMMooMMMMN                                                                                                                                        ",
+"                                                                              :hMMMN+hNMMmy/mNMMdNMMMMMMMmy+smMMMMMMNhs+smMMNhsomNMMMyosMMMMdsyMMMd+MMd/dNMMMooMMMMM                                                                                                                                        ",
+"                                                                              `.mNMMmssNMMNd/hNMMMMMMMMMMNNNMMMMMNmh+ydmMMNm+ydMMMMMMmhoMMMMNosMMMd/MMd/NMMMMssmMMMM                                                                                                                                        ",
+"                                                                                 +dMMNh/mNMMNsohMMMMMMMMMMMMMMNNysssMMMMmhsoMMNdMMMMMMd:MMMMMooMMMh-MMd/MMMMMyoyMMMM`                                                                                                                                       ",
+"                                                                                  -sMMNd/hNMMNdosmMMMMMMMMMMNhssdNMMMNms+ymMNy/.dNMMMMh-MMMMMooMMMd:MMd/MMMMMyosMMMM-`                                                                                                                                      ",
+"                                                                                    /ymMMyohMMMMdyyhMMMMMdys+hNMMMMMhooyMMmy`   :dMMMMd:MMMMMsoMMMh.MMd/mNMMMdysMMMM/.                                                                                                                                      ",
+"                                                                                     ./dhhs-oyhhhhs/:yhs:-:shhhhhhyo.ohhdo:     `sdhhhs.yhhhd/:shhs.hhs:/yhhhy+:dhhho.                                                                                                                                      ",
+"                                                                                                                                                                                                                                                                                                            ",
+"                                                                                                                                                                                                                                                                                                            ",
+];
+var characters = [];
+var n = 0;
+var total;
+$(document).ready(function(){
+	for (var i=0;i<art.length;i++) {
+		var line = art[i].split("");
+		for (var j=0;j<line.length;j++) {
+			var character = line[j];
+			if (character!=" ") {
+				var top = i*4.8;
+				var left = j*2.4;
+				characters.push("<div class='character' id='c_"+i+"_"+j+"' style='top:"+top+"px;left:"+left+"px;'>"+character+"</div>");
+			}
+		}
+	};
+	characters = shuffle(characters);
+	total = characters.length;
+	show();
+});
+function show() {
+	var character = "";
+	for (var k=0;k<250;k++) {
+		if (n+k<total) {
+			character += characters[n+k];
+		}
+	}
+	$("#art").append(character);
+	n += 250;
+	progress = n*100/total;
+	$("#progress").attr('value',progress);
+	if (n<characters.length) {
+		setTimeout(show,100);
+	} else {
+		$("#progress").hide();
+	}
+}
+function shuffle(array) {
+	var currentIndex = array.length, temporaryValue, randomIndex;
+	while (0 !== currentIndex) {
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex -= 1;
+		temporaryValue = array[currentIndex];
+		array[currentIndex] = array[randomIndex];
+		array[randomIndex] = temporaryValue;
+	}
+	return array;
+}
+
+    </script>
+	</body>
+</html>
