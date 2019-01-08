@@ -2,14 +2,22 @@
 var uname=prompt("Hey, qual seu nome?");
 
 function alerta(){
-  if (uname=="Rodrigo"){
-    alert("Funfo!") 
+    if (uname == "Rodrigo"){
+        text = "Bem vindo Mestre!!"
+    } else if (uname == "13"){
+        text = "Bem vindo Mestre!!"
+    } else if (uname == "yah"){
+    alert("Oi mozi :3") 
+    text = "Bem vinda amor! Se achar algo errado me avisa. Te amo <3"
+  } else if (uname == "yasmim"){
+    alert("Oi mozi :3") 
+    text = "Bem vinda amor! Se achar algo errado me avisa. Te amo <3"
   } else {
     alert("Hey " + uname + ','+"obrigado por visitar meu blog!!")
-
+    text = "Bem vindo "+ uname+ "!!"
   }
 }
-
+alerta();
 // Created by Tiyam Foyraz
 
 //Open The navigation bar onclicking the hamburger button
@@ -113,3 +121,4 @@ function yo(){
   document.getElementById('3').style.color="#aaa";
   document.getElementById('4').style.color="#fff";
 }
+
