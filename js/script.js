@@ -12,7 +12,11 @@ function alerta(){
   } else if (uname == "yasmim"){
     alert("Oi mozi :3") 
     text = "Bem vinda amor! Se achar algo errado me avisa. Te amo <3"
-  } else {
+  } else if (uname == "leo"){
+        text = "Bem vindo Watson!!"
+    }else if (uname == "watson"){
+        text = "Bem vindo Watson!!"
+    }  else {
     alert("Hey " + uname + ','+"obrigado por visitar meu blog!!")
     text = "Bem vindo "+ uname+ "!!"
   }
