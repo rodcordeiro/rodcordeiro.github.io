@@ -89,7 +89,7 @@
 
  <section id="home">
 
-   <h1>Bem vindo <script>document.write( uname )</script>!!</H1>
+   <h1 id="text"></H1>
      <p> Ent&#227o... isso &#233 um blog/di&#225rio sobre meus projetos, c&#243digos, coisas novas que aprendi. Sobre mim. Pelo menos &#233 essa a ideia ent&#227o, vamos l&#225! </p>
      <p>
 
@@ -617,5 +617,16 @@ funcionar.
 </div>
 </section>
 </div>
+<script>
+var i=0,text;
+ function typing() {
+    if(i<text.length){
+      document.getElementById("text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing,100);
+    }
+  }
+  typing();
+</script>
 </body>
 </html>
