@@ -1,27 +1,56 @@
 // Most part created by Rodrigo Cordeiro
-var uname=prompt("Hey, qual seu nome?");
-
-function alerta(){
-    if (uname == "Rodrigo"){
-        text = "Bem vindo Mestre!!"
-    } else if (uname == "13"){
-        text = "Bem vindo Mestre!!"
-    } else if (uname == "yah"){
-    alert("Oi mozi :3") 
-    text = "Bem vinda amor! Se achar algo errado me avisa. Te amo <3"
-  } else if (uname == "yasmim"){
-    alert("Oi mozi :3") 
-    text = "Bem vinda amor! Se achar algo errado me avisa. Te amo <3"
-  } else if (uname == "leo"){
-        text = "Bem vindo Watson!!"
-    }else if (uname == "watson"){
-        text = "Bem vindo Watson!!"
-    }  else {
-    alert("Hey " + uname + ','+"obrigado por visitar meu blog!!")
-    text = "Bem vindo "+ uname+ "!!"
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
-}
-alerta();
+  
+  function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var j = 0; j < ca.length; j++) {
+      var c = ca[j];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  
+  function checkCookie() {
+    var user=getCookie("username");
+    if (user != "") {
+        if (user == "rodrigo"){
+            text = "Bem vindo Mestre!!"
+        } else if (user == "13"){
+            text = "Bem vindo Mestre!!"
+        } else if (user == "yah"){
+        alert("Oi mozi :3") 
+        text = "Bem vinda amor! Se achar algo errado me avisa. Te amo <3"
+      } else if (user == "yasmim"){
+        alert("Oi mozi :3") 
+        text = "Bem vinda amor! Se achar algo errado me avisa. Te amo <3"
+      } else {
+        alert("Hey " + user + ','+"obrigado por visitar meu blog!!")
+        text = "Bem vindo "+ user+ "!!"
+      }
+    }
+    
+        
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+         setCookie("username", user, 30);
+       }
+    }
+  }
+
+  
 // Created by Tiyam Foyraz
 
 //Open The navigation bar onclicking the hamburger button
