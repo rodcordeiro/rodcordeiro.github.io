@@ -1,30 +1,6 @@
 // Most part created by Rodrigo Cordeiro
-function setCookie(cname,cvalue,exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires=" + d.toGMTString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
-  
-  function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var j = 0; j < ca.length; j++) {
-      var c = ca[j];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }
-  
-  function checkCookie() {
-    var user=getCookie("username");
-    if (user != "") {
+var user =prompt('Hey, qual seu nome?');
+if (user != "" || user != "null") {
         if (user == "rodrigo"){
             text = "Bem vindo Mestre!!"
         } else if (user == "13"){
@@ -37,18 +13,11 @@ function setCookie(cname,cvalue,exdays) {
         text = "Bem vinda amor! Se achar algo errado me avisa. Te amo <3"
       } else {
         alert("Hey " + user + ','+"obrigado por visitar meu blog!!")
-        text = "Bem vindo "+ user+ "!!"
+        text = "Bem vindo(a) "+ user+ "!!"
       }
+    }   else {
+       text = "Bem vindo(a) Anônimo(a)..."
     }
-    
-        
-    } else {
-       user = prompt("Please enter your name:","");
-       if (user != "" && user != null) {
-         setCookie("username", user, 30);
-       }
-    }
-  }
 
   
 // Created by Tiyam Foyraz
