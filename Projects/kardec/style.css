@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+	font-family: Montserrat;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+table, tr{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+td, div{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+#menu div{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.head{
+	height: 100px;
+	float: right;
+	width: 50%;
+	padding: 10px;
+	margin-top: 10%;
+}
+.head-img{
+	height: auto;
+	width: 40%;
+	float: left;
+}
+
+.content{
+	width: 90%;
+	margin: 1% 5%;
+	padding: 3%;
+}
+
+.card{
+	margin: 2% 0%;
+}
+#expande1,#expande2{
+	display: none;
+}
+
+#p1, #p2, #p3{
+	display: none;
+}
+#p1:target, #p2:target, #p3:target{
+	display: block;
+}
+@media  screen and (max-width: 768px) {
+
+
+
+}
