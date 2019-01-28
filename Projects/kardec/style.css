@@ -40,6 +40,9 @@ td, div{
 .card{
 	margin: 2% 0%;
 }
+.title{
+	text-align: center;
+}
 #expande1,#expande2{
 	display: none;
 }
